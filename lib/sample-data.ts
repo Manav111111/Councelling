@@ -127,52 +127,79 @@ export const colleges: College[] = [
 
 export const mentors: Mentor[] = [
   {
-    id: "aashi-msit",
-    name: "Aashi Mehra",
-    college: "MSIT",
-    branch: "CSE",
-    batch: "2023",
-    photo: `${cloudinary}/w_420,h_420,c_fill,g_face,q_auto/f_auto/sample.jpg`,
-    bio: "Software engineer and former IPU choice-filling mentor who helps students balance branch, commute, and placement outcomes.",
-    journey:
-      "Aashi entered counselling with a borderline rank for top CS branches and used upgrade rounds strategically to land MSIT CSE.",
-    tips: ["Lock ambitious choices first", "Keep commute realistic", "Compare branch demand across rounds"],
-    tags: ["CSE", "MSIT", "2023 batch"],
-    linkedin: "https://linkedin.com",
-    instagram: "https://instagram.com",
-    bookingUrl: "https://wa.me/919999999999"
-  },
-  {
-    id: "karan-usict",
-    name: "Karan Bedi",
+    id: "manav-gupta",
+    name: "Manav Gupta",
     college: "USICT",
-    branch: "IT",
+    branch: "CSE",
     batch: "2024",
     photo: `${cloudinary}/w_420,h_420,c_fill,g_face,q_auto/f_auto/sample.jpg`,
-    bio: "Campus-school mentor focused on high-rank strategy, sliding rounds, and technical interview preparation.",
-    journey:
-      "Karan optimized his list around campus school preferences and avoided common branch-ordering mistakes.",
-    tips: ["Do not skip campus options", "Track last two years of round movement", "Keep documents ready before allotment"],
-    tags: ["IT", "USICT", "2024 batch"],
+    bio: "Computer Science mentor from the 2024 batch, helping you make the right choices for your IPU counselling.",
+    journey: "Navigated the IPU counselling process to secure a top Computer Science seat.",
+    tips: ["Lock ambitious choices first", "Keep commute realistic", "Compare branch demand across rounds"],
+    tags: ["Computer Science", "2024 batch"],
     linkedin: "https://linkedin.com",
     instagram: "https://instagram.com",
-    bookingUrl: "https://calendly.com"
+    bookingUrl: "https://wa.me/917827465966?text=Hi,%20I%20want%20to%20book%20a%20session%20with%20Manav%20Gupta"
   },
   {
-    id: "mehak-vips",
-    name: "Mehak Suri",
-    college: "VIPS",
-    branch: "Law",
-    batch: "2022",
-    photo: `${cloudinary}/w_420,h_420,c_fill,g_face,q_auto/f_auto/sample.jpg`,
-    bio: "Law mentor who explains document verification, category certificates, and realistic campus expectations.",
-    journey:
-      "Mehak navigated multiple rounds, category document checks, and final reporting with a focus on reducing last-minute stress.",
-    tips: ["Keep original documents sorted", "Check reporting instructions twice", "Talk to seniors before freezing"],
-    tags: ["Law", "VIPS", "2022 batch"],
+    id: "mohit-aggarwal",
+    name: "Mohit Aggarwal",
+    college: "USICT", 
+    branch: "CSE",
+    batch: "2024",
+    photo: `${cloudinary}/w_420,h_420,c_fill,g_face,q_auto/f_auto/cld-sample-2.jpg`,
+    bio: "Computer Science mentor from the 2024 batch with expertise in choice filling.",
+    journey: "Secured a Computer Science seat by carefully planning the preference list.",
+    tips: ["Do not skip campus options", "Track last two years of round movement", "Keep documents ready before allotment"],
+    tags: ["Computer Science", "2024 batch"],
     linkedin: "https://linkedin.com",
     instagram: "https://instagram.com",
-    bookingUrl: "https://wa.me/919888888888"
+    bookingUrl: "https://wa.me/917827465966?text=Hi,%20I%20want%20to%20book%20a%20session%20with%20Mohit%20Aggarwal"
+  },
+  {
+    id: "prashant-kumar",
+    name: "Prashant Kumar",
+    college: "USICT",
+    branch: "CSE",
+    batch: "2024",
+    photo: `${cloudinary}/w_420,h_420,c_fill,g_face,q_auto/f_auto/cld-sample-3.jpg`,
+    bio: "Computer Science mentor helping you understand branch tradeoffs.",
+    journey: "Successfully navigated the cutoff variations to get the desired branch.",
+    tips: ["Keep original documents sorted", "Check reporting instructions twice", "Talk to seniors before freezing"],
+    tags: ["Computer Science", "2024 batch"],
+    linkedin: "https://linkedin.com",
+    instagram: "https://instagram.com",
+    bookingUrl: "https://wa.me/917827465966?text=Hi,%20I%20want%20to%20book%20a%20session%20with%20Prashant%20Kumar"
+  },
+  {
+    id: "sambhav-yadav",
+    name: "Sambhav Yadav",
+    college: "USICT",
+    branch: "CSE",
+    batch: "2024",
+    photo: `${cloudinary}/w_420,h_420,c_fill,g_face,q_auto/f_auto/cld-sample-4.jpg`,
+    bio: "Expert mentor for Computer Science aspirants.",
+    journey: "Used upgrade rounds strategically to land a top college.",
+    tips: ["Focus on your core interest", "Understand the sliding round", "Always keep a backup plan"],
+    tags: ["Computer Science", "2024 batch"],
+    linkedin: "https://linkedin.com",
+    instagram: "https://instagram.com",
+    bookingUrl: "https://wa.me/917827465966?text=Hi,%20I%20want%20to%20book%20a%20session%20with%20Sambhav%20Yadav"
+  },
+  {
+    id: "manish-gupta",
+    name: "Manish Gupta",
+    college: "GTBIT",
+    branch: "IT",
+    batch: "2025",
+    photo: `${cloudinary}/w_420,h_420,c_fill,g_face,q_auto/f_auto/cld-sample-5.jpg`,
+    bio: "IT mentor from GTBIT specializing in choice filling and document verification.",
+    journey: "Guided by mentors to secure an IT seat at GTBIT.",
+    tips: ["Verify all your category certificates", "Check the official IPU notices daily", "Never miss the choice locking deadline"],
+    tags: ["IT", "GTBIT", "2025 batch"],
+    linkedin: "https://linkedin.com",
+    instagram: "https://instagram.com",
+    bookingUrl: "https://wa.me/917827465966?text=Hi,%20I%20want%20to%20book%20a%20session%20with%20Manish%20Gupta"
   }
 ];
 

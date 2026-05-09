@@ -1,9 +1,8 @@
-import { ArrowRight, CheckCircle2, Video, FileText, LayoutList, Users } from "lucide-react";
+import { ArrowRight, CheckCircle2, Video, FileText, LayoutList, Users, ShieldCheck } from "lucide-react";
 import Image from "next/image";
-import { Button } from "@/components/ui/Button";
 import { mentors } from "@/lib/sample-data";
 
-const WHATSAPP_LINK = "https://wa.me/917827465966?text=Hi,%20I%20want%20to%20join%20the%20premium%20counselling%20batch.";
+const WHATSAPP_LINK = "https://wa.me/917827465966?text=Hi,%20I%20want%20to%20buy%20the%20premium%20counselling%20batch%20subscription.";
 
 export default function PremiumCounsellingPage() {
   return (
@@ -28,7 +27,58 @@ export default function PremiumCounsellingPage() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-lg bg-green-500 px-8 py-4 text-lg font-bold text-white shadow-lg transition-transform hover:scale-105 hover:bg-green-600"
             >
-              Subscribe Now via WhatsApp <ArrowRight size={20} />
+              Buy Subscription <ArrowRight size={20} />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section className="px-4 py-16 md:py-24 bg-slate-50">
+        <div className="mx-auto max-w-3xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-black text-ipu-ink md:text-5xl">Simple, Transparent Pricing</h2>
+            <p className="mt-4 text-lg text-slate-600">Get everything you need for successful admission in one complete package.</p>
+          </div>
+
+          <div className="rounded-3xl border-2 border-ipu-blue bg-white p-8 md:p-12 shadow-2xl relative overflow-hidden">
+            <div className="absolute top-0 right-0 bg-red-500 text-white px-6 py-2 rounded-bl-2xl font-black shadow-lg">
+              50% OFF (Limited Time)
+            </div>
+            
+            <div className="mb-8 border-b border-blue-50 pb-8 text-center">
+              <h3 className="text-2xl font-black text-ipu-ink">Total Plan</h3>
+              <div className="mt-4 flex items-center justify-center gap-4">
+                <span className="text-4xl font-bold text-slate-400 line-through">₹2000</span>
+                <span className="text-6xl font-black text-ipu-blue">₹1000</span>
+              </div>
+              <p className="mt-2 text-sm font-semibold text-green-600 flex items-center justify-center gap-1">
+                <ShieldCheck size={16} /> One-time payment. Valid till admission.
+              </p>
+            </div>
+
+            <ul className="space-y-4 mb-10">
+              {[
+                "Weekly Google Meet with Mentors",
+                "Instant Alert on Important Notices",
+                "Registration Assistance",
+                "Personalized Choice Filling List",
+                "Exclusive Community Access",
+                "Future Help & Guidance After College"
+              ].map((feature, i) => (
+                <li key={i} className="flex items-center gap-3 text-lg text-slate-700 font-medium">
+                  <CheckCircle2 className="text-ipu-blue shrink-0" size={24} /> {feature}
+                </li>
+              ))}
+            </ul>
+
+            <a
+              href={WHATSAPP_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex w-full items-center justify-center gap-2 rounded-xl bg-ipu-blue px-8 py-5 text-xl font-black text-white shadow-lg transition-transform hover:scale-105 hover:bg-blue-700"
+            >
+              Buy Subscription Now <ArrowRight size={24} />
             </a>
           </div>
         </div>
@@ -64,7 +114,7 @@ export default function PremiumCounsellingPage() {
       </section>
 
       {/* Meet Our Mentors Section */}
-      <section className="bg-slate-50 px-4 py-16 md:py-24">
+      <section className="bg-slate-50 px-4 py-16 md:py-24 border-t border-blue-50">
         <div className="mx-auto max-w-7xl">
           <div className="text-center">
             <h2 className="text-3xl font-black text-ipu-ink md:text-4xl">Meet Your Mentors</h2>
@@ -87,16 +137,7 @@ export default function PremiumCounsellingPage() {
                   </div>
                 </div>
                 <div className="p-6">
-                  <div className="mb-4 grid grid-cols-2 gap-4 border-b border-slate-100 pb-4">
-                    <div>
-                      <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Rank</p>
-                      <p className="font-bold text-ipu-ink">AIR {2500 + i * 1100}</p>
-                    </div>
-                    <div>
-                      <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Email</p>
-                      <p className="font-bold text-ipu-ink text-sm truncate">{mentor.name.toLowerCase().split(' ')[0]}@ipuhub.in</p>
-                    </div>
-                  </div>
+
                   <p className="text-sm leading-relaxed text-slate-600 line-clamp-3">
                     {mentor.bio}
                   </p>

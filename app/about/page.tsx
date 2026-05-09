@@ -31,6 +31,10 @@ export default function AboutPage() {
             {mentors.map((mentor) => <MentorCard key={mentor.id} mentor={mentor} />)}
           </div>
         </div>
+
+        <div className="mt-12 rounded-xl border border-blue-100 bg-blue-50/50 p-6 text-sm text-blue-900 shadow-sm">
+          <strong>Disclaimer:</strong> All the information regarding colleges (including cutoffs, placements, fees, and ranks) is collected through online research, public domains, and student networks. We try our best to keep it accurate, but we do not claim any information to be 100% true or official. Please verify all critical details through official GGSIPU notices before making final decisions.
+        </div>
       </div>
     </section>
   );

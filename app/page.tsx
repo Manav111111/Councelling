@@ -12,16 +12,50 @@ const features = [
 ];
 
 const faqs = [
-  "What is IPU counselling?",
-  "How should I arrange my choice list?",
-  "Can I upgrade after Round 1?",
-  "Which documents are needed for reporting?",
-  "How do category certificates affect allotment?",
-  "Do cutoffs change every year?",
-  "Should I prefer branch or college?",
-  "How does sliding or floating work?",
-  "What happens in stray vacancy round?",
-  "Can I save predictions and colleges?"
+  {
+    q: "Why should I take your subscription for counselling?",
+    a: "Our premium subscription provides you with complete end-to-end support for IPU admissions. You get Weekly Google Meets with Mentors, instant alerts on important notices, registration and choice filling assistance, a personalized choice filling list tailored to your rank, exclusive community access, and future help and guidance even after you enter college."
+  },
+  {
+    q: "What is IPU counselling?",
+    a: "IPU counselling is the online seat allotment process for admission into Guru Gobind Singh Indraprastha University affiliated colleges based on entrance ranks, category, and seat availability. Always verify final rules, schedules, and eligibility through official notices before making decisions."
+  },
+  {
+    q: "How should I arrange my choice list?",
+    a: "Place colleges and branches in the exact order you genuinely prefer, not only based on cutoff trends. Start with dream options, then realistic choices, and finally safe backup options."
+  },
+  {
+    q: "Can I upgrade after Round 1?",
+    a: "Yes, if you choose the float/upgrade option during counselling, you can participate in later rounds for a better college or branch while keeping your current allotted seat temporarily."
+  },
+  {
+    q: "Which documents are needed for reporting?",
+    a: "Common documents include rank card, admit card, Class 10th & 12th marksheets, category certificate (if applicable), ID proof, passport photos, and allotment letter. Official counselling notices provide the final required list."
+  },
+  {
+    q: "How do category certificates affect allotment?",
+    a: "Reserved category certificates allow candidates to compete for reserved seats under quotas like OBC, SC, ST, or EWS. Invalid or outdated certificates can cancel reservation benefits during verification."
+  },
+  {
+    q: "Do cutoffs change every year?",
+    a: "Yes, cutoffs vary every year depending on factors like number of applicants, exam difficulty, seat intake, and branch demand. Historical cutoffs help estimate trends but do not guarantee admission."
+  },
+  {
+    q: "Should I prefer branch or college?",
+    a: "Choose branch if you already have a strong career interest like CSE or AI. Choose a better college if you value campus exposure, placements, and overall opportunities more."
+  },
+  {
+    q: "How does sliding or floating work?",
+    a: "Floating allows you to keep your current seat while trying for a higher preference in later rounds. Sliding usually means upgrading to another branch within the same college if seats become available."
+  },
+  {
+    q: "What happens in stray vacancy round?",
+    a: "The stray vacancy round fills remaining vacant seats after regular counselling rounds end. Admissions happen quickly, and seat availability is usually limited and highly dynamic."
+  },
+  {
+    q: "Can I save predictions and colleges?",
+    a: "Yes, users can save predicted colleges, compare options later, and track cutoff trends for better decision-making during counselling. This feature is useful for building and revising choice lists."
+  }
 ];
 
 export default function HomePage() {
@@ -45,9 +79,9 @@ export default function HomePage() {
             </div>
             <div className="mt-10 grid grid-cols-3 gap-3">
               {[
-                ["18K+", "students helped"],
-                ["80+", "colleges covered"],
-                ["120+", "mentors available"]
+                ["100+", "students helped"],
+                ["10+", "colleges covered"],
+                ["15+", "mentors available"]
               ].map(([value, label]) => (
                 <div key={label} className="rounded-lg border border-blue-100 bg-white p-4 shadow-sm">
                   <p className="text-2xl font-black text-ipu-blue md:text-3xl">{value}</p>
@@ -59,7 +93,7 @@ export default function HomePage() {
           <div className="relative">
             <div className="absolute inset-6 rounded-[2rem] bg-ipu-sky/20 blur-3xl" />
             <div className="relative overflow-hidden rounded-xl border border-blue-100 bg-white shadow-glow">
-              <Image src="https://res.cloudinary.com/demo/image/upload/w_1200,h_900,c_fill,q_auto/f_auto/cld-sample-4.jpg" alt="IPU campus students" width={900} height={680} className="h-[420px] w-full object-cover" priority />
+              <Image src="/header.png" alt="IPU campus students" width={900} height={680} className="w-full h-auto object-contain" priority />
               <div className="grid gap-3 p-4 sm:grid-cols-3">
                 {["Cutoff trends", "Mentor calls", "Choice list"].map((item) => (
                   <div key={item} className="rounded-lg bg-ipu-mist p-3 text-center text-sm font-black text-ipu-blue">{item}</div>
@@ -123,7 +157,7 @@ export default function HomePage() {
                 </Button>
               </div>
             </div>
-            
+
             <div className="grid gap-4 sm:grid-cols-2">
               {mentors.slice(0, 4).map((mentor, i) => (
                 <div key={mentor.id} className="rounded-xl bg-white/10 p-4 backdrop-blur-sm border border-white/10 shadow-xl">
@@ -132,16 +166,6 @@ export default function HomePage() {
                     <div>
                       <p className="font-bold text-sm">{mentor.name}</p>
                       <p className="text-xs text-blue-200">{mentor.college} · {mentor.branch}</p>
-                    </div>
-                  </div>
-                  <div className="mt-3 flex justify-between text-xs font-medium border-t border-white/10 pt-3">
-                    <div>
-                      <span className="block text-white/50 uppercase text-[10px] tracking-wider mb-0.5">Rank</span>
-                      AIR {2500 + i * 1100}
-                    </div>
-                    <div className="text-right">
-                      <span className="block text-white/50 uppercase text-[10px] tracking-wider mb-0.5">Email</span>
-                      <span className="block">{mentor.name.toLowerCase().split(' ')[0]}@ipuhub.in</span>
                     </div>
                   </div>
                 </div>
@@ -175,13 +199,11 @@ export default function HomePage() {
         <div className="mx-auto max-w-4xl">
           <SectionHeading title="IPU counselling FAQs" />
           <div className="grid gap-3">
-            {faqs.map((question, index) => (
-              <details key={question} className="rounded-lg border border-blue-100 bg-white p-4 shadow-sm">
-                <summary className="cursor-pointer font-bold text-ipu-ink">{question}</summary>
-                <p className="mt-3 text-sm leading-6 text-slate-600">
-                  {index < 3
-                    ? "Use official notices for final decisions, then use this hub to compare historical data, mentor advice, and your personal constraints."
-                    : "The safest approach is to verify the latest GGSIPU notification, keep documents ready, and avoid ordering choices by guesswork alone."}
+            {faqs.map((faq, index) => (
+              <details key={index} className="rounded-lg border border-blue-100 bg-white p-4 shadow-sm group">
+                <summary className="cursor-pointer font-bold text-ipu-ink group-open:text-ipu-blue transition-colors">{faq.q}</summary>
+                <p className="mt-3 text-sm leading-6 text-slate-600 font-medium">
+                  {faq.a}
                 </p>
               </details>
             ))}
