@@ -40,16 +40,43 @@ export function AuthBox() {
         const credential = await createUserWithEmailAndPassword(getFirebaseAuth(), email, password);
         if (name) await updateProfile(credential.user, { displayName: name });
         await saveProfile(credential.user.uid, name, credential.user.email);
-        toast("Account created. Welcome to IPU Counselling Hub.");
+        toast.success("Account created. Welcome to IPU Counselling Hub.");
         router.push("/");
       } else {
         const credential = await signInWithEmailAndPassword(getFirebaseAuth(), email, password);
         await saveProfile(credential.user.uid, credential.user.displayName, credential.user.email);
-        toast("Logged in successfully.");
+        toast.success("Logged in successfully.");
         router.push("/");
       }
-    } catch (error) {
-      toast(error instanceof Error ? error.message : "Authentication failed.");
+    } catch (error: any) {
+      let message = "Authentication failed.";
+      
+      switch (error.code) {
+        case "auth/invalid-email":
+          message = "Please enter a valid email address.";
+          break;
+        case "auth/user-not-found":
+          message = "No account found with this email.";
+          break;
+        case "auth/wrong-password":
+          message = "Incorrect password.";
+          break;
+        case "auth/invalid-credential":
+          message = "Incorrect email or password.";
+          break;
+        case "auth/too-many-requests":
+          message = "Too many attempts. Try again later.";
+          break;
+        case "auth/email-already-in-use":
+          message = "This email is already registered.";
+          break;
+        case "auth/weak-password":
+          message = "Password should be at least 6 characters.";
+          break;
+      }
+      
+      toast.error(message);
+      console.error(error);
     }
   }
 
@@ -57,10 +84,12 @@ export function AuthBox() {
     try {
       const credential = await signInWithPopup(getFirebaseAuth(), getGoogleProvider());
       await saveProfile(credential.user.uid, credential.user.displayName, credential.user.email);
-      toast("Google login successful.");
+      toast.success("Google login successful.");
       router.push("/");
-    } catch {
-      toast("Google login failed.");
+    } catch (error: any) {
+      if (error.code !== "auth/popup-closed-by-user") {
+        toast.error("Google login failed.");
+      }
     }
   }
 

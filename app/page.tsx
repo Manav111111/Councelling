@@ -82,7 +82,7 @@ export default function HomePage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-lg bg-red-600 px-5 py-2.5 text-sm font-bold text-white shadow-sm transition-all hover:bg-red-700 hover:shadow-md"
               >
-                <Youtube size={18} /> YouTube Subscribe
+                <Youtube size={18} /> YouTube
               </a>
               <a
                 href="https://chat.whatsapp.com/Lff2bHCTdrSLUbxLjyOxQ2"
