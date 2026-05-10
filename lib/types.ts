@@ -8,6 +8,7 @@ export type Branch =
   | "Civil"
   | "MBA"
   | "Law"
+  | "AIDS"
   | "BBA";
 
 export type College = {

@@ -1,4 +1,4 @@
-import { ArrowRight, BookOpenCheck, GraduationCap, LineChart, MessagesSquare, SearchCheck, CheckCircle2 } from "lucide-react";
+import { ArrowRight, BookOpenCheck, GraduationCap, LineChart, MessagesSquare, SearchCheck, CheckCircle2, Youtube, MessageCircle } from "lucide-react";
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -73,9 +73,25 @@ export default function HomePage() {
             <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-650">
               Predict likely IPU colleges, compare campus outcomes, meet seniors, and move through counselling with a plan instead of panic.
             </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <div className="mt-8 flex flex-wrap gap-3">
               <Button href="/predict">Predict My College <ArrowRight size={18} /></Button>
               <Button href="/mentors" variant="secondary">Meet Mentors</Button>
+              <a
+                href="https://www.youtube.com/@IpuHelp-p4y"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-lg bg-red-600 px-5 py-2.5 text-sm font-bold text-white shadow-sm transition-all hover:bg-red-700 hover:shadow-md"
+              >
+                <Youtube size={18} /> YouTube Subscribe
+              </a>
+              <a
+                href="https://chat.whatsapp.com/Lff2bHCTdrSLUbxLjyOxQ2"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-lg bg-green-500 px-5 py-2.5 text-sm font-bold text-white shadow-sm transition-all hover:bg-green-600 hover:shadow-md"
+              >
+                <MessageCircle size={18} /> WhatsApp Community
+              </a>
             </div>
             <div className="mt-10 grid grid-cols-3 gap-3">
               {[
