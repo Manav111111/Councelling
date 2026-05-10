@@ -143,6 +143,28 @@ export const cutoffSamples: CutoffSample[] = [
   { rank_input: 11234, region: "outside", course_type: "4yr", college: "USICT", branch: "Electronics and Communication Engineering", admitted: 1 },
   { rank_input: 28765, region: "outside", course_type: "4yr", college: "USICT", branch: "Electronics and Communication Engineering", admitted: 1 },
   { rank_input: 33765, region: "outside", course_type: "4yr", college: "USICT", branch: "Electronics and Communication Engineering", admitted: 0 },
+  // ADGIPS - delhi
+  { rank_input: 152345, region: "delhi", course_type: "4yr", college: "ADGIPS", branch: "Computer Science and Engineering", admitted: 1 },
+  { rank_input: 312456, region: "delhi", course_type: "4yr", college: "ADGIPS", branch: "Computer Science and Engineering", admitted: 1 },
+  { rank_input: 317456, region: "delhi", course_type: "4yr", college: "ADGIPS", branch: "Computer Science and Engineering", admitted: 0 },
+  { rank_input: 243210, region: "delhi", course_type: "4yr", college: "ADGIPS", branch: "Information Technology", admitted: 1 },
+  { rank_input: 456789, region: "delhi", course_type: "4yr", college: "ADGIPS", branch: "Information Technology", admitted: 1 },
+  { rank_input: 461789, region: "delhi", course_type: "4yr", college: "ADGIPS", branch: "Information Technology", admitted: 0 },
+  // ADGIPS - outside
+  { rank_input: 72345, region: "outside", course_type: "4yr", college: "ADGIPS", branch: "Computer Science and Engineering", admitted: 1 },
+  { rank_input: 125678, region: "outside", course_type: "4yr", college: "ADGIPS", branch: "Computer Science and Engineering", admitted: 1 },
+  { rank_input: 130678, region: "outside", course_type: "4yr", college: "ADGIPS", branch: "Computer Science and Engineering", admitted: 0 },
+  // GTBIT - delhi
+  { rank_input: 178234, region: "delhi", course_type: "4yr", college: "GTBIT", branch: "Computer Science and Engineering", admitted: 1 },
+  { rank_input: 356789, region: "delhi", course_type: "4yr", college: "GTBIT", branch: "Computer Science and Engineering", admitted: 1 },
+  { rank_input: 361789, region: "delhi", course_type: "4yr", college: "GTBIT", branch: "Computer Science and Engineering", admitted: 0 },
+  { rank_input: 289432, region: "delhi", course_type: "4yr", college: "GTBIT", branch: "Information Technology", admitted: 1 },
+  { rank_input: 512345, region: "delhi", course_type: "4yr", college: "GTBIT", branch: "Information Technology", admitted: 1 },
+  { rank_input: 517345, region: "delhi", course_type: "4yr", college: "GTBIT", branch: "Information Technology", admitted: 0 },
+  // GTBIT - outside
+  { rank_input: 85432, region: "outside", course_type: "4yr", college: "GTBIT", branch: "Computer Science and Engineering", admitted: 1 },
+  { rank_input: 142567, region: "outside", course_type: "4yr", college: "GTBIT", branch: "Computer Science and Engineering", admitted: 1 },
+  { rank_input: 147567, region: "outside", course_type: "4yr", college: "GTBIT", branch: "Computer Science and Engineering", admitted: 0 },
 ];
 
 // Derive cutoff ranges from the raw samples.
