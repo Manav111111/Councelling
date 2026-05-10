@@ -175,7 +175,13 @@ export default function HomePage() {
             </div>
 
             <div className="grid gap-4 sm:grid-cols-2">
-              {mentors.slice(0, 4).map((mentor, i) => (
+              {mentors
+                .filter(m => ["manav-gupta", "shanu-singh", "manish-gupta", "dev-dtu"].includes(m.id))
+                .sort((a, b) => {
+                  const order = ["manav-gupta", "shanu-singh", "manish-gupta", "dev-dtu"];
+                  return order.indexOf(a.id) - order.indexOf(b.id);
+                })
+                .map((mentor) => (
                 <div key={mentor.id} className="rounded-xl bg-white/10 p-4 backdrop-blur-sm border border-white/10 shadow-xl">
                   <div className="flex items-center gap-3">
                     <Image src={mentor.photo} alt={mentor.name} width={48} height={48} loading="lazy" className="h-12 w-12 rounded-full object-cover border-2 border-white/20" />
