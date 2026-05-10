@@ -3,7 +3,7 @@ import { importantDates } from "@/lib/sample-data";
 import { Button } from "@/components/ui/Button";
 
 const steps = [
-  "Register on IPU CET portal",
+  "Register on GGSIPU portal",
   "Pay counselling fee",
   "Fill choice list with branch and college priorities",
   "Round 1 seat allotment",
@@ -13,7 +13,7 @@ const steps = [
 ];
 
 const checklist = {
-  Academic: ["Class 10 marksheet", "Class 12 marksheet", "CET admit card", "Rank proof"],
+  Academic: ["Class 10 marksheet", "Class 12 marksheet", "JEE Mains admit card", "JEE Mains Rank proof"],
   "ID proof": ["Aadhaar card", "Photographs", "Candidate signature", "Fee receipt"],
   "Category certificate": ["OBC/SC/ST/EWS/PH certificate", "Delhi region proof", "Medical certificate if applicable"]
 };

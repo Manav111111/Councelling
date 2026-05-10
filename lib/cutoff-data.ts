@@ -1,4 +1,4 @@
-// Real IPU CET counselling admission data (303 samples)
+// Real IPU JEE Mains counselling admission data (303 samples)
 // admitted = 1 → student was admitted at that rank
 // admitted = 0 → boundary rank just above last admitted (not admitted)
 export type CutoffSample = {

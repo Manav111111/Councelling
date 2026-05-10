@@ -6,7 +6,7 @@ import { jsPDF } from "jspdf";
 import { Button } from "@/components/ui/Button";
 import { useToast } from "@/components/ui/Toaster";
 
-const base = ["Class 10 marksheet", "Class 12 marksheet", "CET admit card", "Rank card", "Aadhaar card", "Passport photos", "Fee payment receipt", "Medical certificate"];
+const base = ["Class 10 marksheet", "Class 12 marksheet", "JEE Mains admit card", "JEE Mains Rank card", "Aadhaar card", "Passport photos", "Fee payment receipt", "Medical certificate"];
 const categoryDocs: Record<string, string[]> = {
   General: [],
   OBC: ["OBC certificate", "Non-creamy layer certificate"],

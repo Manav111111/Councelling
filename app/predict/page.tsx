@@ -67,7 +67,7 @@ export default function PredictPage() {
           </span>
           <h1 className="mt-4 text-4xl font-black text-ipu-ink md:text-5xl">Predict Your IPU College</h1>
           <p className="mt-3 text-lg text-slate-600 max-w-2xl mx-auto">
-            Enter your CET rank and region to see which colleges and branches you are likely to get.
+            Enter your JEE Mains rank and region to see which colleges and branches you are likely to get.
           </p>
         </div>
 
@@ -77,7 +77,7 @@ export default function PredictPage() {
             {/* Rank */}
             <div className="sm:col-span-3 grid gap-2">
               <label className="text-sm font-bold text-ipu-ink" htmlFor="rank-input">
-                Your CET Rank
+                Your JEE Mains Rank (CRL)
               </label>
               <input
                 id="rank-input"
