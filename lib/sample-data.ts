@@ -350,8 +350,8 @@ export const testimonials = [
   },
   {
     name: "Naina Kapoor",
-    college: "VIPS Law",
-    batch: "2026",
+    college: "VIPS CS",
+    batch: "2025",
     photo: `${cloudinary}/w_240,h_240,c_fill,g_face,q_auto/f_auto/sample.jpg`,
     quote: "I understood the entire counselling flow in one evening."
   }
