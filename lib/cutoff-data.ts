@@ -143,20 +143,6 @@ export const cutoffSamples: CutoffSample[] = [
   { rank_input: 11234, region: "outside", course_type: "4yr", college: "USICT", branch: "Electronics and Communication Engineering", admitted: 1 },
   { rank_input: 28765, region: "outside", course_type: "4yr", college: "USICT", branch: "Electronics and Communication Engineering", admitted: 1 },
   { rank_input: 33765, region: "outside", course_type: "4yr", college: "USICT", branch: "Electronics and Communication Engineering", admitted: 0 },
-  // VIPS - delhi
-  { rank_input: 145678, region: "delhi", course_type: "4yr", college: "VIPS", branch: "Law (BA LLB)", admitted: 1 },
-  { rank_input: 298765, region: "delhi", course_type: "4yr", college: "VIPS", branch: "Law (BA LLB)", admitted: 1 },
-  { rank_input: 303765, region: "delhi", course_type: "4yr", college: "VIPS", branch: "Law (BA LLB)", admitted: 0 },
-  { rank_input: 98765, region: "delhi", course_type: "4yr", college: "VIPS", branch: "BBA", admitted: 1 },
-  { rank_input: 245678, region: "delhi", course_type: "4yr", college: "VIPS", branch: "BBA", admitted: 1 },
-  { rank_input: 250678, region: "delhi", course_type: "4yr", college: "VIPS", branch: "BBA", admitted: 0 },
-  // VIPS - outside
-  { rank_input: 89234, region: "outside", course_type: "4yr", college: "VIPS", branch: "Law (BA LLB)", admitted: 1 },
-  { rank_input: 178956, region: "outside", course_type: "4yr", college: "VIPS", branch: "Law (BA LLB)", admitted: 1 },
-  { rank_input: 183956, region: "outside", course_type: "4yr", college: "VIPS", branch: "Law (BA LLB)", admitted: 0 },
-  { rank_input: 62345, region: "outside", course_type: "4yr", college: "VIPS", branch: "BBA", admitted: 1 },
-  { rank_input: 145678, region: "outside", course_type: "4yr", college: "VIPS", branch: "BBA", admitted: 1 },
-  { rank_input: 150678, region: "outside", course_type: "4yr", college: "VIPS", branch: "BBA", admitted: 0 },
 ];
 
 // Derive cutoff ranges from the raw samples.
