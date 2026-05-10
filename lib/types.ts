@@ -11,7 +11,11 @@ export type Branch =
   | "AIDS"
   | "AIML"
   | "CST"
-  | "BBA";
+  | "BBA"
+  | "Software Engineering"
+  | "EE"
+  | "Biotechnology"
+  | "Engineering Physics";
 
 export type College = {
   slug: string;

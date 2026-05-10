@@ -122,6 +122,25 @@ export const colleges: College[] = [
       `${cloudinary}/w_600,h_420,c_fill,q_auto/f_auto/sample.jpg`
     ],
     mapEmbed: "https://www.google.com/maps?q=VIPS%20Pitampura&output=embed"
+  },
+  {
+    slug: "dtu",
+    name: "Delhi Technological University",
+    shortName: "DTU",
+    location: "Shahbad Daulatpur, Delhi",
+    type: "Government",
+    image: "/header.webp",
+    logo: "/header.webp",
+    topBranches: ["CSE", "IT", "Software Engineering"],
+    averageFees: 236000,
+    placementPercent: 88,
+    averagePackage: "15.4 LPA",
+    totalSeats: 2500,
+    accreditations: ["NAAC A+", "AICTE", "UGC"],
+    overview: "One of India's top state engineering universities, DTU (formerly Delhi College of Engineering) is highly regarded for strong placements and coding culture.",
+    recruiters: ["Microsoft", "Google", "Amazon", "Adobe", "Goldman Sachs"],
+    gallery: ["/header.webp"],
+    mapEmbed: "https://www.google.com/maps?q=DTU%20Delhi&output=embed"
   }
 ];
 
@@ -207,7 +226,7 @@ export const mentors: Mentor[] = [
     college: "GTBIT",
     branch: "IT",
     batch: "2025",
-    photo: "/manish.webp",
+    photo: "/manish.jpg",
     bio: "IT mentor from GTBIT specializing in choice filling and document verification.",
     journey: "Guided by mentors to secure an IT seat at GTBIT.",
     tips: ["Verify all your category certificates", "Check the official IPU notices daily", "Never miss the choice locking deadline"],
@@ -230,6 +249,21 @@ export const mentors: Mentor[] = [
     linkedin: "https://linkedin.com",
     instagram: "https://instagram.com",
     bookingUrl: "https://wa.me/917827465966?text=Hi,%20I%20want%20to%20book%20a%20session%20with%20Nikhil"
+  },
+  {
+    id: "dev-dtu",
+    name: "Dev",
+    college: "DTU",
+    branch: "Civil",
+    batch: "2025",
+    photo: "/dev.jpg",
+    bio: "Civil Engineering mentor from DTU helping you with engineering admissions.",
+    journey: "Joined DTU to pursue my passion in Civil Engineering and explore the vibrant campus life.",
+    tips: ["Understand the JAC Delhi rounds carefully", "Check internal branch sliding rules", "Look at tech culture and societies in DTU"],
+    tags: ["Civil", "DTU", "2025 batch"],
+    linkedin: "https://linkedin.com",
+    instagram: "https://instagram.com",
+    bookingUrl: "https://wa.me/917827465966?text=Hi,%20I%20want%20to%20book%20a%20session%20with%20Dev"
   }
 ];
 
