@@ -514,8 +514,8 @@ export const collegesData: CollegeData[] = [
     },
     overview: "One of India's top state engineering universities, DTU (formerly Delhi College of Engineering) is highly regarded for strong placements, coding culture, tech societies, and alumni network. It is especially famous for CSE, IT, SE, and ECE branches, with major tech companies recruiting every year.",
     mapEmbed: "https://www.google.com/maps?q=Delhi+Technological+University&output=embed",
-    image: "/header.webp",
-    gallery: ["/header.webp"]
+    image: "/DTU.jpg",
+    gallery: ["/DTU.jpg"]
   }
 ];
 

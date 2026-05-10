@@ -129,8 +129,8 @@ export const colleges: College[] = [
     shortName: "DTU",
     location: "Shahbad Daulatpur, Delhi",
     type: "Government",
-    image: "/header.webp",
-    logo: "/header.webp",
+    image: "/DTU.jpg",
+    logo: "/DTU.jpg",
     topBranches: ["CSE", "IT", "Software Engineering"],
     averageFees: 236000,
     placementPercent: 88,
@@ -139,7 +139,7 @@ export const colleges: College[] = [
     accreditations: ["NAAC A+", "AICTE", "UGC"],
     overview: "One of India's top state engineering universities, DTU (formerly Delhi College of Engineering) is highly regarded for strong placements and coding culture.",
     recruiters: ["Microsoft", "Google", "Amazon", "Adobe", "Goldman Sachs"],
-    gallery: ["/header.webp"],
+    gallery: ["/DTU.jpg"],
     mapEmbed: "https://www.google.com/maps?q=DTU%20Delhi&output=embed"
   }
 ];
