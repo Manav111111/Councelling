@@ -1,8 +1,8 @@
 "use client";
 
-import { onAuthStateChanged, type User } from "firebase/auth";
+import { onAuthStateChanged, setPersistence, browserLocalPersistence, type User } from "firebase/auth";
 import { createContext, useContext, useEffect, useMemo, useState } from "react";
-import { auth, loadAnalytics } from "@/lib/firebase";
+import { getFirebaseAuth, loadAnalytics } from "@/lib/firebase";
 
 type AuthContextValue = {
   user: User | null;
@@ -20,7 +20,10 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    const auth = getFirebaseAuth();
+    setPersistence(auth, browserLocalPersistence).catch(() => undefined);
     loadAnalytics().catch(() => undefined);
+
     return onAuthStateChanged(auth, (nextUser) => {
       setUser(nextUser);
       setLoading(false);

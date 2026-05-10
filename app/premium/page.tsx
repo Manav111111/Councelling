@@ -45,7 +45,7 @@ export default function PremiumCounsellingPage() {
             <div className="absolute top-0 right-0 bg-red-500 text-white px-6 py-2 rounded-bl-2xl font-black shadow-lg">
               50% OFF (Limited Time)
             </div>
-            
+
             <div className="mb-8 border-b border-blue-50 pb-8 text-center">
               <h3 className="text-2xl font-black text-ipu-ink">Total Plan</h3>
               <div className="mt-4 flex items-center justify-center gap-4">
@@ -91,7 +91,7 @@ export default function PremiumCounsellingPage() {
             <h2 className="text-3xl font-black text-ipu-ink md:text-5xl">What We Provide</h2>
             <p className="mt-4 text-lg text-slate-600">Everything you need to navigate IPU counselling successfully.</p>
           </div>
-          
+
           <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {[
               { icon: LayoutList, title: "Registration & Choice Filling", desc: "Expertly crafted choice lists tailored to your rank and preferences." },
@@ -120,15 +120,15 @@ export default function PremiumCounsellingPage() {
             <h2 className="text-3xl font-black text-ipu-ink md:text-4xl">Meet Your Mentors</h2>
             <p className="mt-4 text-lg text-slate-600">Connect with the top rankers from MAIT, MSIT, USICT, and more.</p>
           </div>
-          
+
           <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {mentors.map((mentor, i) => (
               <div key={mentor.id} className="overflow-hidden rounded-2xl bg-white shadow-lg transition-transform hover:-translate-y-1">
                 <div className="aspect-square relative w-full bg-slate-100">
-                  <Image 
-                    src={mentor.photo} 
-                    alt={mentor.name} 
-                    fill 
+                  <Image
+                    src={mentor.photo}
+                    alt={mentor.name}
+                    fill
                     className="object-cover"
                   />
                   <div className="absolute bottom-0 w-full bg-gradient-to-t from-black/80 to-transparent p-4 pt-12">

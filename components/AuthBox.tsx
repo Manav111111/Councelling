@@ -4,7 +4,7 @@ import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signInWithP
 import { doc, setDoc } from "firebase/firestore";
 import { Chrome, Mail } from "lucide-react";
 import { useState } from "react";
-import { auth, db, googleProvider } from "@/lib/firebase";
+import { getFirebaseAuth, getFirebaseDb, getGoogleProvider } from "@/lib/firebase";
 import { Button } from "@/components/ui/Button";
 import { useToast } from "@/components/ui/Toaster";
 
@@ -17,7 +17,7 @@ export function AuthBox() {
 
   async function saveProfile(uid: string, displayName: string | null, userEmail: string | null) {
     await setDoc(
-      doc(db, "users", uid),
+      doc(getFirebaseDb(), "users", uid),
       {
         uid,
         name: displayName ?? name,
@@ -35,12 +35,12 @@ export function AuthBox() {
   async function submit() {
     try {
       if (mode === "signup") {
-        const credential = await createUserWithEmailAndPassword(auth, email, password);
+        const credential = await createUserWithEmailAndPassword(getFirebaseAuth(), email, password);
         if (name) await updateProfile(credential.user, { displayName: name });
         await saveProfile(credential.user.uid, name, credential.user.email);
         toast("Account created. Welcome to IPU Counselling Hub.");
       } else {
-        const credential = await signInWithEmailAndPassword(auth, email, password);
+        const credential = await signInWithEmailAndPassword(getFirebaseAuth(), email, password);
         await saveProfile(credential.user.uid, credential.user.displayName, credential.user.email);
         toast("Logged in successfully.");
       }
@@ -51,7 +51,7 @@ export function AuthBox() {
 
   async function googleLogin() {
     try {
-      const credential = await signInWithPopup(auth, googleProvider);
+      const credential = await signInWithPopup(getFirebaseAuth(), getGoogleProvider());
       await saveProfile(credential.user.uid, credential.user.displayName, credential.user.email);
       toast("Google login successful.");
     } catch {
