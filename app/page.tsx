@@ -129,7 +129,7 @@ export default function HomePage() {
               </span>
               <h2 className="mt-4 text-3xl font-black md:text-5xl">Our Exclusive Counselling Batch</h2>
               <p className="mt-4 text-lg text-blue-100 leading-relaxed">
-                Skip the guesswork. Get end-to-end guidance from IPU's top rankers to secure your dream college.
+                Skip the guesswork. Get end-to-end guidance from IPU&apos;s top rankers to secure your dream college.
               </p>
               <ul className="mt-8 space-y-4">
                 {[

@@ -152,7 +152,7 @@ export default function PremiumCounsellingPage() {
       <section className="px-4 py-20 text-center">
         <h2 className="text-3xl font-black text-ipu-ink md:text-5xl">Ready to secure your seat?</h2>
         <p className="mt-6 text-lg text-slate-600 max-w-2xl mx-auto">
-          Don't leave your college admission to chance. Join the premium counselling batch and let our experts guide you to the best possible college for your rank.
+          Don&apos;t leave your college admission to chance. Join the premium counselling batch and let our experts guide you to the best possible college for your rank.
         </p>
         <div className="mt-10">
           <a
