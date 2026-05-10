@@ -264,6 +264,21 @@ export const mentors: Mentor[] = [
     linkedin: "https://linkedin.com",
     instagram: "https://instagram.com",
     bookingUrl: "https://wa.me/917827465966?text=Hi,%20I%20want%20to%20book%20a%20session%20with%20Dev"
+  },
+  {
+    id: "kartik-gupta",
+    name: "Kartik Gupta",
+    college: "MAIT",
+    branch: "CSE",
+    batch: "2025",
+    photo: "/kartik gupta.jpg",
+    bio: "CSE mentor from MAIT helping you with choice filling and technical branch selection.",
+    journey: "Secured a CSE seat at MAIT through dedicated rank-based choice filling and understanding the counselling rounds.",
+    tips: ["Focus on MAIT's vibrant coding culture", "Check recent placement trends for CSE/IT", "Ensure all documents are ready for the reporting round"],
+    tags: ["CSE", "MAIT", "2025 batch"],
+    linkedin: "https://linkedin.com",
+    instagram: "https://instagram.com",
+    bookingUrl: "https://wa.me/917827465966?text=Hi,%20I%20want%20to%20book%20a%20session%20with%20Kartik%20Gupta"
   }
 ];
 
