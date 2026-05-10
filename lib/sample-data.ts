@@ -132,7 +132,7 @@ export const mentors: Mentor[] = [
     college: "USICT",
     branch: "CSE",
     batch: "2024",
-    photo: `${cloudinary}/w_420,h_420,c_fill,g_face,q_auto/f_auto/sample.jpg`,
+    photo: "/MANAV.jpg",
     bio: "Computer Science mentor from the 2024 batch, helping you make the right choices for your IPU counselling.",
     journey: "Navigated the IPU counselling process to secure a top Computer Science seat.",
     tips: ["Lock ambitious choices first", "Keep commute realistic", "Compare branch demand across rounds"],
