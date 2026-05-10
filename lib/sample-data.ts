@@ -215,6 +215,21 @@ export const mentors: Mentor[] = [
     linkedin: "https://linkedin.com",
     instagram: "https://instagram.com",
     bookingUrl: "https://wa.me/917827465966?text=Hi,%20I%20want%20to%20book%20a%20session%20with%20Manish%20Gupta"
+  },
+  {
+    id: "nikhil",
+    name: "Nikhil",
+    college: "JIMS (JEMTEC)",
+    branch: "CSE",
+    batch: "2025",
+    photo: "/nikhil.webp",
+    bio: "CSE mentor from JIMS (JEMTEC) helping you navigate Greater Noida colleges.",
+    journey: "Strategically chose JIMS for its growth and CSE focus.",
+    tips: ["Focus on location connectivity", "Look at recent placement trends", "Keep your document set ready"],
+    tags: ["CSE", "JIMS", "2025 batch"],
+    linkedin: "https://linkedin.com",
+    instagram: "https://instagram.com",
+    bookingUrl: "https://wa.me/917827465966?text=Hi,%20I%20want%20to%20book%20a%20session%20with%20Nikhil"
   }
 ];
 

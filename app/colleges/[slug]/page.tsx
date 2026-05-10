@@ -87,9 +87,7 @@ export default function CollegeDetailPage({ params }: { params: { slug: string }
                   <strong>Shift Info:</strong> {college.admission.shifts.join(" · ")}
                 </div>
               )}
-            </section>
-
-            {/* Placements */}
+                     {/* Placements */}
             <section className="rounded-2xl border border-blue-50 bg-white p-6 shadow-sm">
               <h2 className="flex items-center gap-2 text-2xl font-black"><TrendingUp size={22} className="text-green-600" /> Placements {college.placements.year}</h2>
               <div className="mt-5 grid grid-cols-2 gap-4 sm:grid-cols-3">
@@ -116,16 +114,6 @@ export default function CollegeDetailPage({ params }: { params: { slug: string }
                     <span key={r} className="rounded-lg bg-ipu-mist px-3 py-1.5 text-xs font-bold text-ipu-blue">{r}</span>
                   ))}
                 </div>
-              </div>
-            </section>
-
-            {/* Gallery */}
-            <section className="rounded-2xl border border-blue-50 bg-white p-6 shadow-sm">
-              <h2 className="text-2xl font-black mb-4">Gallery</h2>
-              <div className="grid gap-3 sm:grid-cols-3">
-                {college.gallery.map((img, i) => (
-                  <Image key={i} src={img} alt={college.fullName} width={420} height={300} className="h-48 w-full rounded-xl object-cover" />
-                ))}
               </div>
             </section>
           </div>
