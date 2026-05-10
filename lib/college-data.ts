@@ -438,4 +438,42 @@ export const collegesData: CollegeData[] = [
     ],
     mapEmbed: "https://www.google.com/maps?q=USAR+GGSIPU+Surajmal+Vihar+Delhi&output=embed",
   },
+  {
+    code: "JEMTEC",
+    slug: "jemtec",
+    fullName: "JIMS Engineering Management Technical Campus",
+    shortName: "JEMTEC",
+    university: "GGSIPU",
+    type: "private",
+    location: "Knowledge Park-III, Greater Noida, UP",
+    established: 2008,
+    accreditation: ["AICTE", "GGSIPU", "NAAC"],
+    nirfRank: null,
+    fees: { annualTuition: 188000, total4yr: 750000, currency: "INR" },
+    branches: ["CSE", "AIML", "AIDS", "CST", "IT"],
+    admission: {
+      exam: ["JEE Main", "IPU CET"],
+      minPcmPercent: 55,
+      quota: "Management Quota Available",
+      delhiReservationPercent: 85,
+    },
+    placements: {
+      year: 2024,
+      placementPercent: 70,
+      avgPackageLpa: 6.0,
+      highestPackageLpa: 20,
+      topRecruiters: ["TCS", "Infosys", "Wipro", "Amazon", "Deloitte", "Kellton Tech", "Rapipay", "HCL"],
+    },
+    campus: { sizeAcres: 5.5, hostel: true, metroAccess: true, nearestMetro: "Knowledge Park-II" },
+    overview:
+      "A private IPU-affiliated engineering college located in Greater Noida, JEMTEC is known for affordable B.Tech programs, decent placements, and good connectivity through the Knowledge Park area. Popular among IPU students for CSE-related branches and moderate cutoffs.",
+    image: "/bvcoe.webp",
+    gallery: [
+      `${cloudinary}/w_600,h_420,c_fill,q_auto/f_auto/cld-sample-2.jpg`,
+      `${cloudinary}/w_600,h_420,c_fill,q_auto/f_auto/cld-sample-5.jpg`,
+      `${cloudinary}/w_600,h_420,c_fill,q_auto/f_auto/cld-sample-3.jpg`,
+    ],
+    mapEmbed: "https://www.google.com/maps?q=JIMS+Engineering+Management+Greater+Noida&output=embed",
+  },
 ];
+

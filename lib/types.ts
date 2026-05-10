@@ -9,6 +9,8 @@ export type Branch =
   | "MBA"
   | "Law"
   | "AIDS"
+  | "AIML"
+  | "CST"
   | "BBA";
 
 export type College = {
