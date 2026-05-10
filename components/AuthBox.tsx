@@ -14,7 +14,7 @@ export function AuthBox() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [mode, setMode] = useState<"login" | "signup">("login");
-  const { toast } = useToast();
+  const { toast, success, error } = useToast();
   const router = useRouter();
 
   async function saveProfile(uid: string, displayName: string | null, userEmail: string | null) {
@@ -40,18 +40,18 @@ export function AuthBox() {
         const credential = await createUserWithEmailAndPassword(getFirebaseAuth(), email, password);
         if (name) await updateProfile(credential.user, { displayName: name });
         await saveProfile(credential.user.uid, name, credential.user.email);
-        toast.success("Account created. Welcome to IPU Counselling Hub.");
+        success("Account created. Welcome to IPU Counselling Hub.");
         router.push("/");
       } else {
         const credential = await signInWithEmailAndPassword(getFirebaseAuth(), email, password);
         await saveProfile(credential.user.uid, credential.user.displayName, credential.user.email);
-        toast.success("Logged in successfully.");
+        success("Logged in successfully.");
         router.push("/");
       }
-    } catch (error: any) {
+    } catch (err: any) {
       let message = "Authentication failed.";
       
-      switch (error.code) {
+      switch (err.code) {
         case "auth/invalid-email":
           message = "Please enter a valid email address.";
           break;
@@ -75,8 +75,8 @@ export function AuthBox() {
           break;
       }
       
-      toast.error(message);
-      console.error(error);
+      error(message);
+      console.error(err);
     }
   }
 
@@ -84,11 +84,11 @@ export function AuthBox() {
     try {
       const credential = await signInWithPopup(getFirebaseAuth(), getGoogleProvider());
       await saveProfile(credential.user.uid, credential.user.displayName, credential.user.email);
-      toast.success("Google login successful.");
+      success("Google login successful.");
       router.push("/");
-    } catch (error: any) {
-      if (error.code !== "auth/popup-closed-by-user") {
-        toast.error("Google login failed.");
+    } catch (err: any) {
+      if (err.code !== "auth/popup-closed-by-user") {
+        error("Google login failed.");
       }
     }
   }
