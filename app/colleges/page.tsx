@@ -80,7 +80,7 @@ export default function CollegesPage() {
               className="group overflow-hidden rounded-2xl border border-blue-50 bg-white shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
             >
               <div className="relative h-48 overflow-hidden">
-                <Image src={college.image} alt={college.fullName} fill className="object-cover transition-transform group-hover:scale-105" />
+                <Image src={college.image} alt={college.fullName} fill loading="lazy" className="object-cover transition-transform group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                 <span className={`absolute left-3 top-3 rounded-full px-2.5 py-1 text-xs font-black ${
                   college.type === "government" ? "bg-green-500 text-white" : "bg-white text-ipu-blue"

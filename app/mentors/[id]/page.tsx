@@ -21,7 +21,7 @@ export default function MentorDetailPage({ params }: { params: { id: string } })
     <section className="section">
       <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-[360px_1fr]">
         <div className="h-fit overflow-hidden rounded-lg border border-blue-100 bg-white shadow-sm">
-          <Image src={mentor.photo} alt={mentor.name} width={720} height={720} className="h-96 w-full object-cover" />
+          <Image src={mentor.photo} alt={mentor.name} width={720} height={720} sizes="(max-width: 1024px) 100vw, 360px" className="h-96 w-full object-cover" />
           <div className="p-5">
             <h1 className="text-3xl font-black">{mentor.name}</h1>
             <p className="mt-1 font-bold text-ipu-blue">{mentor.college} · {mentor.branch} · {mentor.batch}</p>

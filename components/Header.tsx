@@ -3,8 +3,6 @@
 import { GraduationCap, LogIn, Menu, UserRound, MessageCircle } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
-import { signOut } from "firebase/auth";
-import { getFirebaseAuth } from "@/lib/firebase";
 import { useAuth } from "@/components/AuthProvider";
 
 const nav = [
@@ -60,7 +58,7 @@ export function Header() {
               <Link href="/dashboard" className="rounded-lg bg-ipu-blue px-4 py-2 text-sm font-bold text-white hover:bg-blue-800 transition">
                 Dashboard
               </Link>
-              <button onClick={() => signOut(getFirebaseAuth())} className="rounded-lg border border-blue-100 px-3 py-2 text-sm font-semibold hover:bg-slate-50 transition">
+              <button onClick={async () => { const { signOut } = await import("firebase/auth"); const { getFirebaseAuth } = await import("@/lib/firebase"); await signOut(getFirebaseAuth()); }} className="rounded-lg border border-blue-100 px-3 py-2 text-sm font-semibold hover:bg-slate-50 transition">
                 Sign out
               </button>
             </>

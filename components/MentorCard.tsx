@@ -7,7 +7,7 @@ export function MentorCard({ mentor }: { mentor: Mentor }) {
   return (
     <article className="overflow-hidden rounded-lg border border-blue-100 bg-white shadow-sm">
       <div className="relative h-56">
-        <Image src={mentor.photo} alt={mentor.name} fill className="object-cover" />
+        <Image src={mentor.photo} alt={mentor.name} fill loading="lazy" className="object-cover" />
       </div>
       <div className="p-4">
         <div className="flex items-start justify-between gap-3">

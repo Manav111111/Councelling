@@ -109,7 +109,7 @@ export default function HomePage() {
           <div className="relative">
             <div className="absolute inset-6 rounded-[2rem] bg-ipu-sky/20 blur-3xl" />
             <div className="relative overflow-hidden rounded-xl border border-blue-100 bg-white shadow-glow">
-              <Image src="/header.png" alt="IPU campus students" width={900} height={680} className="w-full h-auto object-contain" priority />
+              <Image src="/header.webp" alt="IPU campus students" width={900} height={680} className="w-full h-auto object-contain" priority />
               <div className="grid gap-3 p-4 sm:grid-cols-3">
                 {["Cutoff trends", "Mentor calls", "Choice list"].map((item) => (
                   <div key={item} className="rounded-lg bg-ipu-mist p-3 text-center text-sm font-black text-ipu-blue">{item}</div>
@@ -178,7 +178,7 @@ export default function HomePage() {
               {mentors.slice(0, 4).map((mentor, i) => (
                 <div key={mentor.id} className="rounded-xl bg-white/10 p-4 backdrop-blur-sm border border-white/10 shadow-xl">
                   <div className="flex items-center gap-3">
-                    <Image src={mentor.photo} alt={mentor.name} width={48} height={48} className="h-12 w-12 rounded-full object-cover border-2 border-white/20" />
+                    <Image src={mentor.photo} alt={mentor.name} width={48} height={48} loading="lazy" className="h-12 w-12 rounded-full object-cover border-2 border-white/20" />
                     <div>
                       <p className="font-bold text-sm">{mentor.name}</p>
                       <p className="text-xs text-blue-200">{mentor.college} · {mentor.branch}</p>
@@ -198,7 +198,7 @@ export default function HomePage() {
             {testimonials.map((story) => (
               <article key={story.name} className="rounded-lg border border-blue-100 bg-white p-5 shadow-sm">
                 <div className="flex items-center gap-3">
-                  <Image src={story.photo} alt={story.name} width={56} height={56} className="h-14 w-14 rounded-full object-cover" />
+                  <Image src={story.photo} alt={story.name} width={56} height={56} loading="lazy" className="h-14 w-14 rounded-full object-cover" />
                   <div>
                     <h3 className="font-black">{story.name}</h3>
                     <p className="text-sm font-semibold text-ipu-blue">{story.college} · {story.batch}</p>

@@ -25,7 +25,9 @@ export default function MentorsPage() {
               {["All", ...Array.from(new Set(mentors.map((mentor) => mentor.college)))].map((item) => <option key={item}>{item}</option>)}
             </select>
             <select value={branch} onChange={(event) => setBranch(event.target.value)} className="rounded-md border border-blue-100 px-3 py-3">
-              {["All", "CSE", "IT", "ECE", "Law", "BBA"].map((item) => <option key={item}>{item}</option>)}
+              {["All", ...Array.from(new Set(mentors.map((m) => m.branch)))].map((item) => (
+                <option key={item}>{item}</option>
+              ))}
             </select>
           </div>
         </div>
