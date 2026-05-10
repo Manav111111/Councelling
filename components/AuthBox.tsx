@@ -4,6 +4,7 @@ import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signInWithP
 import { doc, setDoc } from "firebase/firestore";
 import { Chrome, Mail } from "lucide-react";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { getFirebaseAuth, getFirebaseDb, getGoogleProvider } from "@/lib/firebase";
 import { Button } from "@/components/ui/Button";
 import { useToast } from "@/components/ui/Toaster";
@@ -14,6 +15,7 @@ export function AuthBox() {
   const [password, setPassword] = useState("");
   const [mode, setMode] = useState<"login" | "signup">("login");
   const { toast } = useToast();
+  const router = useRouter();
 
   async function saveProfile(uid: string, displayName: string | null, userEmail: string | null) {
     await setDoc(
@@ -39,10 +41,12 @@ export function AuthBox() {
         if (name) await updateProfile(credential.user, { displayName: name });
         await saveProfile(credential.user.uid, name, credential.user.email);
         toast("Account created. Welcome to IPU Counselling Hub.");
+        router.push("/");
       } else {
         const credential = await signInWithEmailAndPassword(getFirebaseAuth(), email, password);
         await saveProfile(credential.user.uid, credential.user.displayName, credential.user.email);
         toast("Logged in successfully.");
+        router.push("/");
       }
     } catch (error) {
       toast(error instanceof Error ? error.message : "Authentication failed.");
@@ -54,6 +58,7 @@ export function AuthBox() {
       const credential = await signInWithPopup(getFirebaseAuth(), getGoogleProvider());
       await saveProfile(credential.user.uid, credential.user.displayName, credential.user.email);
       toast("Google login successful.");
+      router.push("/");
     } catch {
       toast("Google login failed.");
     }
