@@ -129,8 +129,8 @@ export const mentors: Mentor[] = [
   {
     id: "manav-gupta",
     name: "Manav Gupta",
-    college: "USICT",
-    branch: "CSE",
+    college: "ADGIPS",
+    branch: "CS",
     batch: "2024",
     photo: "/MANAV.jpg",
     bio: "Computer Science mentor from the 2024 batch, helping you make the right choices for your IPU counselling.",
@@ -144,8 +144,8 @@ export const mentors: Mentor[] = [
   {
     id: "mohit-aggarwal",
     name: "Mohit Aggarwal",
-    college: "USICT", 
-    branch: "CSE",
+    college: "ADGIPS", 
+    branch: "CS",
     batch: "2024",
     photo: `${cloudinary}/w_420,h_420,c_fill,g_face,q_auto/f_auto/cld-sample-2.jpg`,
     bio: "Computer Science mentor from the 2024 batch with expertise in choice filling.",
@@ -159,8 +159,8 @@ export const mentors: Mentor[] = [
   {
     id: "prashant-kumar",
     name: "Prashant Kumar",
-    college: "USICT",
-    branch: "CSE",
+    college: "ADGIPS",
+    branch: "CS",
     batch: "2024",
     photo: `${cloudinary}/w_420,h_420,c_fill,g_face,q_auto/f_auto/cld-sample-3.jpg`,
     bio: "Computer Science mentor helping you understand branch tradeoffs.",
@@ -174,8 +174,8 @@ export const mentors: Mentor[] = [
   {
     id: "sambhav-yadav",
     name: "Sambhav Yadav",
-    college: "USICT",
-    branch: "CSE",
+    college: "ADGIPS",
+    branch: "CS",
     batch: "2024",
     photo: `${cloudinary}/w_420,h_420,c_fill,g_face,q_auto/f_auto/cld-sample-4.jpg`,
     bio: "Expert mentor for Computer Science aspirants.",

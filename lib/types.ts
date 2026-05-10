@@ -1,6 +1,7 @@
 export type Category = "General" | "OBC" | "SC" | "ST" | "EWS" | "PH";
 export type Branch =
   | "CSE"
+  | "CS"
   | "ECE"
   | "IT"
   | "ME"
