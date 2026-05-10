@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   },
   description:
     "Rank prediction, mentor connect, college comparison, and counselling guidance for GGSIPU admissions.",
+  icons: {
+    icon: "/icon.svg",
+  },
   openGraph: {
     title: "IPU Counselling Hub",
     description: "Find your college. Own your future.",
