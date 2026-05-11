@@ -196,7 +196,7 @@ export const mentors: Mentor[] = [
     college: "ADGIPS",
     branch: "CS",
     batch: "2024",
-    photo: "/sambhav.webp",
+    photo: "/sambhav (2).jpg",
     bio: "Expert mentor for Computer Science aspirants.",
     journey: "Used upgrade rounds strategically to land a top college.",
     tips: ["Focus on your core interest", "Understand the sliding round", "Always keep a backup plan"],
