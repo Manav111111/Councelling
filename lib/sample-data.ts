@@ -279,6 +279,21 @@ export const mentors: Mentor[] = [
     linkedin: "https://linkedin.com",
     instagram: "https://instagram.com",
     bookingUrl: "https://wa.me/917827465966?text=Hi,%20I%20want%20to%20book%20a%20session%20with%20Kartik%20Gupta"
+  },
+  {
+    id: "suraj-mathpal",
+    name: "Suraj Mathpal",
+    college: "BVCOE",
+    branch: "IT",
+    batch: "2024",
+    photo: "/Suraj Mathpal.jpg",
+    bio: "IT mentor from BVCOE with expertise in choice filling and reporting.",
+    journey: "Strategically used the upgrade rounds to secure a top IT seat at BVCOE.",
+    tips: ["Understand the BVCOE campus culture", "Check IT placement stats carefully", "Always keep your document set ready"],
+    tags: ["IT", "BVCOE", "2024 batch"],
+    linkedin: "https://linkedin.com",
+    instagram: "https://instagram.com",
+    bookingUrl: "https://wa.me/917827465966?text=Hi,%20I%20want%20to%20book%20a%20session%20with%20Suraj%20Mathpal"
   }
 ];
 
