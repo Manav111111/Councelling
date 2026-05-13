@@ -1,28 +1,42 @@
 # IPU Counselling Hub
 
-A full-stack admissions counselling platform for GGSIPU/IPU aspirants. It includes rank prediction, college discovery, mentor profiles, counselling guide content, choice-list tooling, document checklist generation, Firebase Auth, Firestore-ready data, Firebase Storage paths, Cloud Messaging hooks, and a Flask/XGBoost ML service.
+A comprehensive full-stack admissions counselling and rank prediction platform built specifically for GGSIPU/IPU engineering aspirants. The platform offers rank prediction, college discovery, mentor profiles, counselling guides, choice-list tooling, and document checklist generation to help students navigate the admissions process.
 
-## Stack
+## 🚀 Features
 
-- Next.js 14 App Router with TypeScript
-- Tailwind CSS
-- Firebase Auth, Firestore, Storage, Cloud Messaging
-- Recharts for cutoff visualizations
-- Cloudinary-hosted demo images
-- Flask + XGBoost/scikit-learn prediction microservice
+- **Advanced Rank Predictor:** Built-in machine learning service (Flask/XGBoost) and rule-based fallback to accurately predict college and branch placement based on historical cutoff data.
+- **Comprehensive College Data:** Up-to-date cutoff and placement data for major IPU B.Tech colleges including ADGITM, HMR, USAR, BVCOE, GTBIT, and VIPS.
+- **Mentor Connectivity:** Integrated mentor profiles with booking links to allow students to connect directly with experienced seniors.
+- **Real-time Notifications:** Firebase Cloud Messaging hooks for real-time updates and important dates.
+- **Community Support:** Footer integration with a dedicated WhatsApp community for real-time aspirant support.
 
-## Setup
+## 💻 Tech Stack
+
+- **Frontend:** Next.js 14 (App Router), React, TypeScript, Tailwind CSS
+- **Backend & Database:** Firebase (Auth, Firestore, Storage, Cloud Messaging)
+- **Machine Learning Service:** Python, Flask, XGBoost, scikit-learn
+- **Data Visualization:** Recharts for dynamic cutoff trend visualizations
+- **Media Hosting:** Cloudinary (for demo images) & Firebase Storage
+
+## 🛠️ Local Setup
+
+### 1. Web Application
 
 ```bash
+# Install dependencies
 npm install
+
+# Set up environment variables
 cp .env.example .env.local
+
+# Run the development server
 npm run dev
 ```
 
-Open `http://localhost:3000`.
+Open `http://localhost:3000` to view the application.
 
-Fill these environment variables in `.env.local`:
-
+**Environment Variables (`.env.local`)**:
+You will need to configure your Firebase and ML API credentials:
 ```bash
 NEXT_PUBLIC_FIREBASE_API_KEY=
 NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=
@@ -35,22 +49,40 @@ NEXT_PUBLIC_ML_API_URL=http://localhost:5000
 NEXT_PUBLIC_GA_ID=
 ```
 
-## Firebase
+### 2. ML Prediction Service
 
-Deploy rules:
+```bash
+cd ml-service
+python -m venv .venv
+# On Windows: .venv\Scripts\activate
+# On Mac/Linux: source .venv/bin/activate
+pip install -r requirements.txt
+python train.py
+python app.py
+```
 
+The API runs locally at `http://localhost:5000/api/predict`.
+
+Alternatively, using Docker:
+```bash
+docker build -t ipu-rank-api .
+docker run -p 5000:5000 ipu-rank-api
+```
+
+## 📦 Firebase Configuration
+
+### Deploy Rules
 ```bash
 firebase deploy --only firestore:rules,storage
 ```
 
-Seed sample content:
-
+### Seed Database
+Populate the Firestore database with sample content:
 ```bash
 npm run seed
 ```
 
-Firestore collections used:
-
+**Firestore Collections:**
 - `users/{uid}`
 - `colleges/{slug}`
 - `mentors/{id}`
@@ -60,85 +92,23 @@ Firestore collections used:
 - `seatMatrix/{id}`
 - `notifications/{id}`
 
-Storage paths expected:
+## 🔒 Admin Access
 
-- `/mentors/{mentorId}/photo.jpg`
-- `/colleges/{slug}/hero.jpg`
-- `/colleges/{slug}/gallery/{n}.jpg`
-- `/users/{uid}/avatar.jpg`
-
-## ML Service
-
-```bash
-cd ml-service
-python -m venv .venv
-.venv\Scripts\activate
-pip install -r requirements.txt
-python train.py
-python app.py
-```
-
-The API runs at `http://localhost:5000/api/predict`.
-
-Docker:
-
-```bash
-docker build -t ipu-rank-api .
-docker run -p 5000:5000 ipu-rank-api
-```
-
-Request shape:
-
-```json
-{
-  "rank": 18000,
-  "category": "General",
-  "branch": ["CSE", "IT"],
-  "round": 2
-}
-```
-
-Response shape:
-
-```json
-{
-  "predictions": [
-    {
-      "college": "MAIT",
-      "branch": "CSE",
-      "lastCloseRank": 20500,
-      "probability": 0.72,
-      "confidence": "Medium"
-    }
-  ]
-}
-```
-
-## Admin Access
-
-Admin writes are guarded by Firestore user profile role:
-
+Admin capabilities are guarded by the Firestore user profile role. To grant admin access, update the user document in Firestore:
 ```json
 {
   "role": "admin"
 }
 ```
+The admin dashboard is available at `/admin`.
 
-The UI includes `/admin`; production apps should set admin claims or role documents from a trusted backend, not from client-side code.
+## 🚀 Deployment
 
-## Deployment
-
-Vercel:
-
+**Frontend (Vercel):**
 ```bash
 npm run build
 vercel
 ```
 
-Firebase Hosting:
-
-```bash
-firebase deploy --only hosting
-```
-
-For the ML service, deploy the Docker container to Cloud Run and set `NEXT_PUBLIC_ML_API_URL` to the Cloud Run URL.
+**ML Service (Google Cloud Run):**
+Deploy the Docker container to Cloud Run and update the `NEXT_PUBLIC_ML_API_URL` environment variable in your Vercel project with the generated URL.
