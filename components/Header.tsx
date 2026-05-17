@@ -7,7 +7,8 @@ import { useAuth } from "@/components/AuthProvider";
 
 const nav = [
   { href: "/colleges", label: "Colleges" },
-  { href: "/predict", label: "Predictions" },
+  { href: "/predict", label: "B.Tech Predictor" },
+  { href: "/cet-predict", label: "CET Predictor" },
   { href: "/mentors", label: "Mentor" },
   { href: "/guide", label: "Guide" },
   { href: "/premium", label: "Premium", highlight: true },
