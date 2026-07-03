@@ -1,7 +1,8 @@
-import { GitCompare, ListChecks, Rows3 } from "lucide-react";
+import { GitCompare, ListChecks, Rows3, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 
 const tools = [
+  { href: "/tools/round1-cutoffs", title: "⚡ Official Round 1 Cutoffs (Simplified)", text: "Check college-wise pure General Category (Delhi & Non-Delhi) closing ranks without PDF clutter.", icon: Sparkles },
   { href: "/tools/compare", title: "College Comparison", text: "Compare fees, branches, placements, cutoffs, and location.", icon: GitCompare },
   { href: "/tools/choice-simulator", title: "Choice Filling Simulator", text: "Drag college-branch options into your final preference order.", icon: Rows3 },
   { href: "/tools/checklist", title: "Checklist Generator", text: "Create a category-specific reporting document checklist.", icon: ListChecks }

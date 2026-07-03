@@ -1,14 +1,14 @@
-import { ArrowRight, BookOpenCheck, GraduationCap, LineChart, MessagesSquare, SearchCheck, CheckCircle2, Youtube, MessageCircle } from "lucide-react";
+import { ArrowRight, BookOpenCheck, GraduationCap, LineChart, MessagesSquare, SearchCheck, CheckCircle2, Youtube, MessageCircle, Sparkles } from "lucide-react";
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { testimonials, mentors } from "@/lib/sample-data";
 
 const features = [
+  { title: "Official Round 1 Cutoffs", icon: Sparkles, text: "Check simplified General Category closing ranks for MAIT, USICT, & 21 colleges without PDF clutter." },
   { title: "Rank Predictor", icon: LineChart, text: "Estimate likely colleges using historical cutoff trends and confidence bands." },
   { title: "Mentor Connect", icon: MessagesSquare, text: "Talk to seniors who have already navigated IPU rounds and reporting." },
-  { title: "College Guide", icon: GraduationCap, text: "Compare fees, branches, placements, cutoffs, commute, and campus fit." },
-  { title: "Counselling Process", icon: BookOpenCheck, text: "Follow a clean timeline with documents, dates, and seat-matrix clarity." }
+  { title: "College Guide", icon: GraduationCap, text: "Compare fees, branches, placements, cutoffs, commute, and campus fit." }
 ];
 
 const faqs = [
@@ -74,6 +74,7 @@ export default function HomePage() {
               Predict likely IPU colleges, compare campus outcomes, meet seniors, and move through counselling with a plan instead of panic.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
+              <Button href="/round1-cutoffs" className="bg-gradient-to-r from-amber-500 to-orange-600 text-white hover:from-amber-600 hover:to-orange-700 shadow-md">⚡ View Round 1 Cutoffs</Button>
               <Button href="/predict">Predict My College <ArrowRight size={18} /></Button>
               <Button href="/mentors" variant="secondary">Meet Mentors</Button>
               <a
