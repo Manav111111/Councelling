@@ -15,9 +15,13 @@ import {
   GraduationCap,
   ChevronRight,
   ShieldCheck,
-  Shield
+  Shield,
+  Users,
+  Award
 } from "lucide-react";
 import { ROUND1_COLLEGES_DATA, Round1College } from "@/lib/round1-cutoff-data";
+
+export type QuotaCategory = "general" | "defence" | "obc" | "sc" | "st" | "ews" | "compare";
 
 export function Round1CutoffExplorer() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -25,7 +29,7 @@ export function Round1CutoffExplorer() {
   const [selectedCollege, setSelectedCollege] = useState<Round1College | null>(null);
   const [userRank, setUserRank] = useState<string>("");
   const [regionFocus, setRegionFocus] = useState<"both" | "delhi" | "outside">("both");
-  const [quotaView, setQuotaView] = useState<"general" | "defence" | "compare">("general");
+  const [quotaView, setQuotaView] = useState<QuotaCategory>("general");
 
   const rankNumber = userRank ? parseInt(userRank.replace(/\D/g, ""), 10) : null;
 
@@ -56,6 +60,18 @@ export function Round1CutoffExplorer() {
     }
   };
 
+  const getQuotaTitle = (quota: QuotaCategory) => {
+    switch (quota) {
+      case "general": return "General Quota (OP)";
+      case "defence": return "Defence Quota (DF)";
+      case "obc": return "OBC Quota (BC - Delhi)";
+      case "sc": return "Scheduled Caste (SC)";
+      case "st": return "Scheduled Tribe (ST)";
+      case "ews": return "EWS Quota";
+      case "compare": return "All Categories Overview";
+    }
+  };
+
   return (
     <div className="space-y-8">
       {/* Top Banner explaining simplicity & quotas */}
@@ -64,23 +80,23 @@ export function Round1CutoffExplorer() {
         <div className="relative z-10 max-w-3xl space-y-4">
           <div className="inline-flex items-center gap-2 rounded-full bg-white/15 px-3.5 py-1.5 text-xs font-bold uppercase tracking-wider backdrop-blur-md border border-white/20">
             <Sparkles size={14} className="text-amber-300" />
-            Official Round 1 Cutoffs • General & Defence
+            Official Round 1 Cutoffs • All Categories Supported
           </div>
           <h1 className="text-3xl font-black md:text-5xl tracking-tight leading-tight">
             IPU Round 1 Cutoff Explorer
           </h1>
           <p className="text-blue-100 text-sm md:text-base leading-relaxed">
-            The official IPU result PDF has over 20 confusing columns. We stripped away all the clutter so you can view pure **General Category** (OPNOHS / OPNOOS) and **Defence Quota** (OPDFHS / OPDFOS) closing ranks instantly.
+            We extracted the complex 26-column IPU official result PDF into an intuitive one-click tool. Check closing ranks for **General (OP)**, **Defence (DF)**, **OBC**, **SC**, **ST**, and **EWS** instantly.
           </p>
-          <div className="flex flex-wrap items-center gap-3 pt-2">
+          <div className="flex flex-wrap items-center gap-2.5 pt-2">
             <span className="inline-flex items-center gap-1.5 rounded-lg bg-emerald-500/20 px-3 py-1.5 text-xs font-bold text-emerald-200 border border-emerald-400/30">
-              <ShieldCheck size={14} /> 100% Authentic Round 1 Data
+              <ShieldCheck size={14} /> 100% Authentic Data
             </span>
             <span className="inline-flex items-center gap-1.5 rounded-lg bg-blue-500/20 px-3 py-1.5 text-xs font-bold text-blue-200 border border-blue-400/30">
-              <Building2 size={14} /> All 21 Engineering Institutes
+              <Building2 size={14} /> 21 Engineering Colleges
             </span>
-            <span className="inline-flex items-center gap-1.5 rounded-lg bg-amber-500/20 px-3 py-1.5 text-xs font-bold text-amber-200 border border-amber-400/30">
-              <Shield size={14} /> Includes Defence Priorities (P-I to P-VIII)
+            <span className="inline-flex items-center gap-1.5 rounded-lg bg-purple-500/20 px-3 py-1.5 text-xs font-bold text-purple-200 border border-purple-400/30">
+              <Users size={14} /> SC / ST / OBC / EWS Included
             </span>
           </div>
         </div>
@@ -132,64 +148,97 @@ export function Round1CutoffExplorer() {
           </div>
         </div>
 
-        {/* Quota Switcher Bar */}
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pt-3 border-t border-slate-100">
-          <div className="flex items-center gap-2 bg-slate-100 p-1.5 rounded-xl flex-wrap">
-            <span className="text-xs font-extrabold px-2 text-slate-600 flex items-center gap-1">
-              <Shield size={14} className="text-ipu-blue" /> Quota Category:
+        {/* Quota Category Tabs */}
+        <div className="space-y-3 pt-3 border-t border-slate-100">
+          <div className="flex items-center justify-between flex-wrap gap-2">
+            <span className="text-xs font-extrabold text-slate-600 flex items-center gap-1.5">
+              <Award size={15} className="text-ipu-blue" /> Select Category / Reservation Quota:
             </span>
+            <div className="flex items-center gap-1.5 bg-slate-100 p-1 rounded-xl">
+              <span className="text-[11px] font-bold px-2 text-slate-500">Region:</span>
+              <button
+                onClick={() => setRegionFocus("both")}
+                className={`px-2.5 py-1 rounded-lg text-xs font-bold transition ${
+                  regionFocus === "both" ? "bg-white text-ipu-blue shadow-sm" : "text-slate-600 hover:text-slate-900"
+                }`}
+              >
+                Both
+              </button>
+              <button
+                onClick={() => setRegionFocus("delhi")}
+                className={`px-2.5 py-1 rounded-lg text-xs font-bold transition ${
+                  regionFocus === "delhi" ? "bg-white text-ipu-blue shadow-sm" : "text-slate-600 hover:text-slate-900"
+                }`}
+              >
+                Delhi
+              </button>
+              <button
+                onClick={() => setRegionFocus("outside")}
+                className={`px-2.5 py-1 rounded-lg text-xs font-bold transition ${
+                  regionFocus === "outside" ? "bg-white text-ipu-blue shadow-sm" : "text-slate-600 hover:text-slate-900"
+                }`}
+              >
+                Non-Delhi
+              </button>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-2 overflow-x-auto pb-1.5 no-scrollbar">
             <button
               onClick={() => setQuotaView("general")}
-              className={`px-3.5 py-1.5 rounded-lg text-xs font-black transition ${
-                quotaView === "general" ? "bg-ipu-blue text-white shadow-sm" : "text-slate-600 hover:text-slate-900"
+              className={`px-3.5 py-2 rounded-xl text-xs font-black transition shrink-0 flex items-center gap-1.5 ${
+                quotaView === "general" ? "bg-ipu-blue text-white shadow-md shadow-blue-500/20" : "bg-slate-100 text-slate-700 hover:bg-slate-200"
               }`}
             >
-              🌟 General Quota
+              🌟 General (OP)
             </button>
             <button
               onClick={() => setQuotaView("defence")}
-              className={`px-3.5 py-1.5 rounded-lg text-xs font-black transition ${
-                quotaView === "defence" ? "bg-emerald-600 text-white shadow-sm" : "text-slate-600 hover:text-slate-900"
+              className={`px-3.5 py-2 rounded-xl text-xs font-black transition shrink-0 flex items-center gap-1.5 ${
+                quotaView === "defence" ? "bg-emerald-600 text-white shadow-md shadow-emerald-500/20" : "bg-slate-100 text-slate-700 hover:bg-slate-200"
               }`}
             >
-              🛡️ Defence Quota
+              🛡️ Defence (DF)
+            </button>
+            <button
+              onClick={() => setQuotaView("obc")}
+              className={`px-3.5 py-2 rounded-xl text-xs font-black transition shrink-0 flex items-center gap-1.5 ${
+                quotaView === "obc" ? "bg-amber-600 text-white shadow-md shadow-amber-500/20" : "bg-slate-100 text-slate-700 hover:bg-slate-200"
+              }`}
+            >
+              🟤 OBC (BC)
+            </button>
+            <button
+              onClick={() => setQuotaView("sc")}
+              className={`px-3.5 py-2 rounded-xl text-xs font-black transition shrink-0 flex items-center gap-1.5 ${
+                quotaView === "sc" ? "bg-purple-600 text-white shadow-md shadow-purple-500/20" : "bg-slate-100 text-slate-700 hover:bg-slate-200"
+              }`}
+            >
+              🟣 SC Quota
+            </button>
+            <button
+              onClick={() => setQuotaView("st")}
+              className={`px-3.5 py-2 rounded-xl text-xs font-black transition shrink-0 flex items-center gap-1.5 ${
+                quotaView === "st" ? "bg-teal-600 text-white shadow-md shadow-teal-500/20" : "bg-slate-100 text-slate-700 hover:bg-slate-200"
+              }`}
+            >
+              🟢 ST Quota
+            </button>
+            <button
+              onClick={() => setQuotaView("ews")}
+              className={`px-3.5 py-2 rounded-xl text-xs font-black transition shrink-0 flex items-center gap-1.5 ${
+                quotaView === "ews" ? "bg-indigo-600 text-white shadow-md shadow-indigo-500/20" : "bg-slate-100 text-slate-700 hover:bg-slate-200"
+              }`}
+            >
+              🟡 EWS Quota
             </button>
             <button
               onClick={() => setQuotaView("compare")}
-              className={`px-3.5 py-1.5 rounded-lg text-xs font-black transition ${
-                quotaView === "compare" ? "bg-purple-600 text-white shadow-sm" : "text-slate-600 hover:text-slate-900"
+              className={`px-3.5 py-2 rounded-xl text-xs font-black transition shrink-0 flex items-center gap-1.5 ${
+                quotaView === "compare" ? "bg-slate-800 text-white shadow-md" : "bg-slate-100 text-slate-700 hover:bg-slate-200"
               }`}
             >
-              ⚖️ Compare Both
-            </button>
-          </div>
-
-          {/* Region Switch */}
-          <div className="flex items-center gap-1.5 bg-slate-100 p-1 rounded-xl self-start md:self-auto">
-            <span className="text-xs font-bold px-2 text-slate-500">Region:</span>
-            <button
-              onClick={() => setRegionFocus("both")}
-              className={`px-3 py-1 rounded-lg text-xs font-bold transition ${
-                regionFocus === "both" ? "bg-white text-ipu-blue shadow-sm" : "text-slate-600 hover:text-slate-900"
-              }`}
-            >
-              Both Regions
-            </button>
-            <button
-              onClick={() => setRegionFocus("delhi")}
-              className={`px-3 py-1 rounded-lg text-xs font-bold transition ${
-                regionFocus === "delhi" ? "bg-white text-ipu-blue shadow-sm" : "text-slate-600 hover:text-slate-900"
-              }`}
-            >
-              Delhi Only
-            </button>
-            <button
-              onClick={() => setRegionFocus("outside")}
-              className={`px-3 py-1 rounded-lg text-xs font-bold transition ${
-                regionFocus === "outside" ? "bg-white text-ipu-blue shadow-sm" : "text-slate-600 hover:text-slate-900"
-              }`}
-            >
-              Outside Delhi
+              ⚖️ Compare All
             </button>
           </div>
         </div>
@@ -219,11 +268,11 @@ export function Round1CutoffExplorer() {
       <div>
         <div className="flex items-center justify-between mb-4 flex-wrap gap-2">
           <h2 className="text-lg font-black text-slate-800">
-            Select a College to View {quotaView === "general" ? "General" : quotaView === "defence" ? "Defence Quota" : "General & Defence"} Cutoffs ({filteredColleges.length})
+            Colleges Offering {getQuotaTitle(quotaView)} ({filteredColleges.length})
           </h2>
           {rankNumber && (
             <p className="text-xs font-semibold text-ipu-blue bg-blue-50 px-3 py-1 rounded-full border border-blue-100">
-              ⚡ Checking chances for Rank #{rankNumber.toLocaleString()} ({quotaView === "defence" ? "Defence Quota" : "General Quota"})
+              ⚡ Evaluating for Rank #{rankNumber.toLocaleString()} ({getQuotaTitle(quotaView)})
             </p>
           )}
         </div>
@@ -243,12 +292,21 @@ export function Round1CutoffExplorer() {
         ) : (
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {filteredColleges.map((college) => {
-              // Find lowest closing rank for highlight based on active quota
-              const lowestDelhiRank = Math.min(
-                ...college.branches.map((b) => 
-                  quotaView === "defence" && b.delhiDefence ? b.delhiDefence.maxRank : b.delhiGeneral.maxRank
-                )
-              );
+              // Find lowest closing rank for active quota
+              const getLowestRank = () => {
+                return Math.min(
+                  ...college.branches.map((b) => {
+                    if (quotaView === "defence" && b.delhiDefence) return b.delhiDefence.maxRank;
+                    if (quotaView === "obc" && b.delhiOBC) return b.delhiOBC.maxRank;
+                    if (quotaView === "sc" && b.delhiSC) return b.delhiSC.maxRank;
+                    if (quotaView === "st" && b.delhiST) return b.delhiST.maxRank;
+                    if (quotaView === "ews" && b.delhiEWS) return b.delhiEWS.maxRank;
+                    return b.delhiGeneral.maxRank;
+                  })
+                );
+              };
+
+              const lowestRank = getLowestRank();
 
               return (
                 <div
@@ -277,13 +335,13 @@ export function Round1CutoffExplorer() {
 
                   <div className="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
                     <div>
-                      <p className="text-slate-400 font-medium">Closing Rank ({quotaView === "defence" ? "Defence" : "General"}):</p>
+                      <p className="text-slate-400 font-medium">Closing Rank ({quotaView.toUpperCase()}):</p>
                       <p className="font-extrabold text-slate-800 mt-0.5">
-                        #{lowestDelhiRank.toLocaleString()} <span className="text-[10px] font-normal text-slate-500">(Delhi)</span>
+                        #{isFinite(lowestRank) ? lowestRank.toLocaleString() : "N/A"} <span className="text-[10px] font-normal text-slate-500">(Delhi)</span>
                       </p>
                     </div>
                     <div className="flex items-center gap-1 font-bold text-ipu-blue bg-blue-50 px-2.5 py-1.5 rounded-lg group-hover:bg-ipu-blue group-hover:text-white transition">
-                      View Cutoff <ChevronRight size={14} />
+                      View Cutoffs <ChevronRight size={14} />
                     </div>
                   </div>
                 </div>
@@ -296,7 +354,7 @@ export function Round1CutoffExplorer() {
       {/* Selected College Cutoff Modal */}
       {selectedCollege && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/60 p-3 sm:p-4 backdrop-blur-sm animate-in fade-in duration-200">
-          <div className="relative flex max-h-[90vh] w-full max-w-5xl flex-col overflow-hidden rounded-3xl bg-white shadow-2xl border border-slate-100">
+          <div className="relative flex max-h-[90vh] w-full max-w-6xl flex-col overflow-hidden rounded-3xl bg-white shadow-2xl border border-slate-100">
             {/* Modal Header */}
             <div className="bg-gradient-to-r from-ipu-blue via-blue-900 to-ipu-sky p-6 text-white flex items-start justify-between gap-4">
               <div className="space-y-1.5">
@@ -304,7 +362,7 @@ export function Round1CutoffExplorer() {
                   <span className="rounded-lg bg-white/20 px-2.5 py-0.5 text-xs font-black uppercase tracking-wider backdrop-blur-sm">
                     {selectedCollege.code}
                   </span>
-                  <span className="text-xs text-blue-200 font-semibold">• Round 1 Official Results</span>
+                  <span className="text-xs text-blue-200 font-semibold">• Official Round 1 Cutoffs</span>
                 </div>
                 <h2 className="text-xl sm:text-2xl font-black leading-tight">
                   {selectedCollege.name}
@@ -321,38 +379,25 @@ export function Round1CutoffExplorer() {
               </button>
             </div>
 
-            {/* Quota Toggle Inside Modal */}
-            <div className="bg-slate-100 px-6 py-3 border-b border-slate-200 flex flex-wrap items-center justify-between gap-3">
-              <div className="flex items-center gap-2">
-                <span className="text-xs font-bold text-slate-600">Active View:</span>
-                <button
-                  onClick={() => setQuotaView("general")}
-                  className={`px-3 py-1 rounded-lg text-xs font-extrabold transition ${
-                    quotaView === "general" ? "bg-ipu-blue text-white shadow-sm" : "bg-white text-slate-700 hover:bg-slate-200"
-                  }`}
-                >
-                  🌟 General Quota
-                </button>
-                <button
-                  onClick={() => setQuotaView("defence")}
-                  className={`px-3 py-1 rounded-lg text-xs font-extrabold transition ${
-                    quotaView === "defence" ? "bg-emerald-600 text-white shadow-sm" : "bg-white text-slate-700 hover:bg-slate-200"
-                  }`}
-                >
-                  🛡️ Defence Quota
-                </button>
-                <button
-                  onClick={() => setQuotaView("compare")}
-                  className={`px-3 py-1 rounded-lg text-xs font-extrabold transition ${
-                    quotaView === "compare" ? "bg-purple-600 text-white shadow-sm" : "bg-white text-slate-700 hover:bg-slate-200"
-                  }`}
-                >
-                  ⚖️ Compare Both
-                </button>
+            {/* Quota Switcher Inside Modal */}
+            <div className="bg-slate-100 px-6 py-3 border-b border-slate-200 flex flex-wrap items-center justify-between gap-3 overflow-x-auto">
+              <div className="flex items-center gap-1.5 min-w-max">
+                <span className="text-xs font-bold text-slate-600 mr-1">Category:</span>
+                {(["general", "defence", "obc", "sc", "st", "ews", "compare"] as QuotaCategory[]).map((q) => (
+                  <button
+                    key={q}
+                    onClick={() => setQuotaView(q)}
+                    className={`px-3 py-1 rounded-lg text-xs font-extrabold transition uppercase ${
+                      quotaView === q ? "bg-ipu-blue text-white shadow-sm" : "bg-white text-slate-700 hover:bg-slate-200"
+                    }`}
+                  >
+                    {q === "compare" ? "⚖️ Compare All" : q}
+                  </button>
+                ))}
               </div>
 
               {rankNumber && (
-                <div className="flex items-center gap-2 text-xs font-bold text-ipu-blue bg-white px-3 py-1 rounded-full shadow-sm">
+                <div className="flex items-center gap-2 text-xs font-bold text-ipu-blue bg-white px-3 py-1 rounded-full shadow-sm shrink-0">
                   <GraduationCap size={15} /> Your Rank: #{rankNumber.toLocaleString()}
                 </div>
               )}
@@ -366,37 +411,81 @@ export function Round1CutoffExplorer() {
                     <tr className="bg-slate-50 border-b border-slate-200 text-[11px] font-black uppercase tracking-wider text-slate-500">
                       <th className="py-3.5 px-4">Course / Engineering Branch</th>
 
-                      {/* General Columns */}
-                      {(quotaView === "general" || quotaView === "compare") && (regionFocus === "both" || regionFocus === "delhi") && (
-                        <th className="py-3.5 px-4 bg-blue-50/50 text-ipu-blue">
-                          Delhi General <span className="block text-[10px] font-normal text-slate-500 lowercase">(home state)</span>
-                        </th>
-                      )}
-                      {(quotaView === "general" || quotaView === "compare") && (regionFocus === "both" || regionFocus === "outside") && (
-                        <th className="py-3.5 px-4 bg-purple-50/50 text-purple-700">
-                          Outside Delhi Gen <span className="block text-[10px] font-normal text-slate-500 lowercase">(all india)</span>
-                        </th>
+                      {/* General */}
+                      {(quotaView === "general" || quotaView === "compare") && (
+                        <>
+                          {(regionFocus === "both" || regionFocus === "delhi") && (
+                            <th className="py-3.5 px-3 bg-blue-50/60 text-ipu-blue">Delhi General (OPNOHS)</th>
+                          )}
+                          {(regionFocus === "both" || regionFocus === "outside") && (
+                            <th className="py-3.5 px-3 bg-blue-50/40 text-blue-800">Outside Gen (OPNOOS)</th>
+                          )}
+                        </>
                       )}
 
-                      {/* Defence Columns */}
-                      {(quotaView === "defence" || quotaView === "compare") && (regionFocus === "both" || regionFocus === "delhi") && (
-                        <th className="py-3.5 px-4 bg-emerald-50/70 text-emerald-800">
-                          Delhi Defence <span className="block text-[10px] font-normal text-slate-500 lowercase">(OPDFHS)</span>
-                        </th>
+                      {/* Defence */}
+                      {(quotaView === "defence" || quotaView === "compare") && (
+                        <>
+                          {(regionFocus === "both" || regionFocus === "delhi") && (
+                            <th className="py-3.5 px-3 bg-emerald-50/70 text-emerald-800">Delhi Defence (OPDFHS)</th>
+                          )}
+                          {(regionFocus === "both" || regionFocus === "outside") && (
+                            <th className="py-3.5 px-3 bg-emerald-50/40 text-emerald-700">Outside Def (OPDFOS)</th>
+                          )}
+                        </>
                       )}
-                      {(quotaView === "defence" || quotaView === "compare") && (regionFocus === "both" || regionFocus === "outside") && (
-                        <th className="py-3.5 px-4 bg-amber-50/70 text-amber-800">
-                          Outside Delhi Def <span className="block text-[10px] font-normal text-slate-500 lowercase">(OPDFOS)</span>
-                        </th>
+
+                      {/* OBC */}
+                      {(quotaView === "obc" || quotaView === "compare") && (
+                        <th className="py-3.5 px-3 bg-amber-50/70 text-amber-800">Delhi OBC (BCNOHS)</th>
+                      )}
+
+                      {/* SC */}
+                      {(quotaView === "sc" || quotaView === "compare") && (
+                        <>
+                          {(regionFocus === "both" || regionFocus === "delhi") && (
+                            <th className="py-3.5 px-3 bg-purple-50/70 text-purple-800">Delhi SC (SCNOHS)</th>
+                          )}
+                          {(regionFocus === "both" || regionFocus === "outside") && (
+                            <th className="py-3.5 px-3 bg-purple-50/40 text-purple-700">Outside SC (SCNOOS)</th>
+                          )}
+                        </>
+                      )}
+
+                      {/* ST */}
+                      {(quotaView === "st" || quotaView === "compare") && (
+                        <th className="py-3.5 px-3 bg-teal-50/70 text-teal-800">Delhi ST (STNOHS)</th>
+                      )}
+
+                      {/* EWS */}
+                      {(quotaView === "ews" || quotaView === "compare") && (
+                        <th className="py-3.5 px-3 bg-indigo-50/70 text-indigo-800">Delhi EWS (EWNOHS)</th>
                       )}
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-sm">
                     {selectedCollege.branches.map((branch, i) => {
-                      const delhiChance = getAdmissionChance(branch.delhiGeneral.maxRank);
-                      const outsideChance = getAdmissionChance(branch.outsideGeneral.maxRank);
-                      const delhiDefChance = getAdmissionChance(branch.delhiDefence?.maxRank);
-                      const outsideDefChance = getAdmissionChance(branch.outsideDefence?.maxRank);
+                      const getCell = (cutoff: { maxRank: number; priority?: string } | undefined, badgeBg: string, textCol: string) => {
+                        if (!cutoff) return <span className="text-xs text-slate-400 italic">N/A</span>;
+                        const chance = getAdmissionChance(cutoff.maxRank);
+                        return (
+                          <div className="space-y-1">
+                            <span className={`font-black text-base ${textCol}`}>
+                              #{cutoff.maxRank.toLocaleString()}
+                            </span>
+                            {cutoff.priority && (
+                              <span className="block text-[10px] font-bold text-emerald-800 bg-emerald-100 px-1.5 py-0.5 rounded w-fit">
+                                {cutoff.priority}
+                              </span>
+                            )}
+                            {chance && quotaView !== "compare" && (
+                              <div className={`mt-1 inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[10px] font-bold border ${chance.badge}`}>
+                                <chance.icon size={11} /> {chance.status}
+                              </div>
+                            )}
+                          </div>
+                        );
+                      };
 
                       return (
                         <tr key={i} className="hover:bg-slate-50/80 transition">
@@ -404,86 +493,55 @@ export function Round1CutoffExplorer() {
                             {branch.branch}
                           </td>
 
-                          {/* Delhi General */}
-                          {(quotaView === "general" || quotaView === "compare") && (regionFocus === "both" || regionFocus === "delhi") && (
-                            <td className="py-4 px-4 bg-blue-50/20">
-                              <div className="space-y-1">
-                                <span className="font-black text-slate-900 text-base">
-                                  #{branch.delhiGeneral.maxRank.toLocaleString()}
-                                </span>
-                                {delhiChance && (
-                                  <div className={`mt-1 inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[10px] font-bold border ${delhiChance.badge}`}>
-                                    <delhiChance.icon size={11} /> {delhiChance.status}
-                                  </div>
-                                )}
-                              </div>
-                            </td>
-                          )}
-
-                          {/* Outside Delhi General */}
-                          {(quotaView === "general" || quotaView === "compare") && (regionFocus === "both" || regionFocus === "outside") && (
-                            <td className="py-4 px-4 bg-purple-50/20">
-                              <div className="space-y-1">
-                                <span className="font-black text-purple-900 text-base">
-                                  #{branch.outsideGeneral.maxRank.toLocaleString()}
-                                </span>
-                                {outsideChance && (
-                                  <div className={`mt-1 inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[10px] font-bold border ${outsideChance.badge}`}>
-                                    <outsideChance.icon size={11} /> {outsideChance.status}
-                                  </div>
-                                )}
-                              </div>
-                            </td>
-                          )}
-
-                          {/* Delhi Defence */}
-                          {(quotaView === "defence" || quotaView === "compare") && (regionFocus === "both" || regionFocus === "delhi") && (
-                            <td className="py-4 px-4 bg-emerald-50/30">
-                              {branch.delhiDefence ? (
-                                <div className="space-y-1">
-                                  <span className="font-black text-emerald-900 text-base">
-                                    #{branch.delhiDefence.maxRank.toLocaleString()}
-                                  </span>
-                                  {branch.delhiDefence.priority && (
-                                    <span className="block text-[11px] font-bold text-emerald-700 bg-emerald-100/80 px-2 py-0.5 rounded-md w-fit">
-                                      🛡️ {branch.delhiDefence.priority}
-                                    </span>
-                                  )}
-                                  {delhiDefChance && quotaView === "defence" && (
-                                    <div className={`mt-1 inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[10px] font-bold border ${delhiDefChance.badge}`}>
-                                      <delhiDefChance.icon size={11} /> {delhiDefChance.status}
-                                    </div>
-                                  )}
-                                </div>
-                              ) : (
-                                <span className="text-xs text-slate-400 font-semibold italic">No Seat Allotted</span>
+                          {/* General */}
+                          {(quotaView === "general" || quotaView === "compare") && (
+                            <>
+                              {(regionFocus === "both" || regionFocus === "delhi") && (
+                                <td className="py-4 px-3 bg-blue-50/20">{getCell(branch.delhiGeneral, "bg-blue-50", "text-slate-900")}</td>
                               )}
-                            </td>
+                              {(regionFocus === "both" || regionFocus === "outside") && (
+                                <td className="py-4 px-3 bg-blue-50/10">{getCell(branch.outsideGeneral, "bg-blue-50", "text-blue-900")}</td>
+                              )}
+                            </>
                           )}
 
-                          {/* Outside Delhi Defence */}
-                          {(quotaView === "defence" || quotaView === "compare") && (regionFocus === "both" || regionFocus === "outside") && (
-                            <td className="py-4 px-4 bg-amber-50/30">
-                              {branch.outsideDefence ? (
-                                <div className="space-y-1">
-                                  <span className="font-black text-amber-900 text-base">
-                                    #{branch.outsideDefence.maxRank.toLocaleString()}
-                                  </span>
-                                  {branch.outsideDefence.priority && (
-                                    <span className="block text-[11px] font-bold text-amber-800 bg-amber-100/80 px-2 py-0.5 rounded-md w-fit">
-                                      🛡️ {branch.outsideDefence.priority}
-                                    </span>
-                                  )}
-                                  {outsideDefChance && quotaView === "defence" && (
-                                    <div className={`mt-1 inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[10px] font-bold border ${outsideDefChance.badge}`}>
-                                      <outsideDefChance.icon size={11} /> {outsideDefChance.status}
-                                    </div>
-                                  )}
-                                </div>
-                              ) : (
-                                <span className="text-xs text-slate-400 font-semibold italic">No Seat Allotted</span>
+                          {/* Defence */}
+                          {(quotaView === "defence" || quotaView === "compare") && (
+                            <>
+                              {(regionFocus === "both" || regionFocus === "delhi") && (
+                                <td className="py-4 px-3 bg-emerald-50/30">{getCell(branch.delhiDefence, "bg-emerald-50", "text-emerald-900")}</td>
                               )}
-                            </td>
+                              {(regionFocus === "both" || regionFocus === "outside") && (
+                                <td className="py-4 px-3 bg-emerald-50/20">{getCell(branch.outsideDefence, "bg-emerald-50", "text-emerald-800")}</td>
+                              )}
+                            </>
+                          )}
+
+                          {/* OBC */}
+                          {(quotaView === "obc" || quotaView === "compare") && (
+                            <td className="py-4 px-3 bg-amber-50/30">{getCell(branch.delhiOBC, "bg-amber-50", "text-amber-900")}</td>
+                          )}
+
+                          {/* SC */}
+                          {(quotaView === "sc" || quotaView === "compare") && (
+                            <>
+                              {(regionFocus === "both" || regionFocus === "delhi") && (
+                                <td className="py-4 px-3 bg-purple-50/30">{getCell(branch.delhiSC, "bg-purple-50", "text-purple-900")}</td>
+                              )}
+                              {(regionFocus === "both" || regionFocus === "outside") && (
+                                <td className="py-4 px-3 bg-purple-50/20">{getCell(branch.outsideSC, "bg-purple-50", "text-purple-800")}</td>
+                              )}
+                            </>
+                          )}
+
+                          {/* ST */}
+                          {(quotaView === "st" || quotaView === "compare") && (
+                            <td className="py-4 px-3 bg-teal-50/30">{getCell(branch.delhiST, "bg-teal-50", "text-teal-900")}</td>
+                          )}
+
+                          {/* EWS */}
+                          {(quotaView === "ews" || quotaView === "compare") && (
+                            <td className="py-4 px-3 bg-indigo-50/30">{getCell(branch.delhiEWS, "bg-indigo-50", "text-indigo-900")}</td>
                           )}
                         </tr>
                       );
@@ -495,7 +553,7 @@ export function Round1CutoffExplorer() {
               <div className="rounded-xl bg-slate-50 p-3.5 text-xs text-slate-600 flex items-start gap-2 border border-slate-200/60">
                 <Info size={16} className="text-ipu-blue shrink-0 mt-0.5" />
                 <p>
-                  <b>Note on Defence Quota:</b> GGSIPU Defence allotments depend primarily on **Defence Priority** (Priority I to Priority IX) and then JEE Main rank within that priority.
+                  <b>Note on IPU Reservation Rules:</b> In GGSIPU B.Tech admissions, **OBC reservation** applies only to candidates belonging to Delhi region (`BCNOHS`). Outside Delhi candidates with OBC certificates compete under Outside General (`OPNOOS`).
                 </p>
               </div>
             </div>
