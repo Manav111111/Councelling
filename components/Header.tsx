@@ -20,53 +20,55 @@ export function Header() {
   const { user } = useAuth();
 
   return (
-    <header className="sticky top-0 z-40 border-b border-blue-100 bg-white/90 backdrop-blur-xl shadow-sm">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
-        <Link href="/" className="flex items-center gap-2.5 font-black text-ipu-blue">
-          <span className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-ipu-blue to-ipu-sky text-white shadow-md">
-            <GraduationCap size={22} />
+    <header className="sticky top-0 z-40 border-b border-blue-100 bg-white/95 backdrop-blur-xl shadow-sm">
+      <div className="mx-auto flex max-w-[1440px] items-center justify-between px-3 sm:px-6 py-3">
+        <Link href="/" className="flex items-center gap-2 font-black text-ipu-blue shrink-0 mr-2">
+          <span className="grid h-9 w-9 lg:h-10 lg:w-10 place-items-center rounded-xl bg-gradient-to-br from-ipu-blue to-ipu-sky text-white shadow-md">
+            <GraduationCap size={20} />
           </span>
-          <span className="leading-tight">
+          <span className="leading-tight text-sm lg:text-base">
             IPU Counselling
-            <span className="block text-xs font-semibold text-ipu-sky">Hub</span>
+            <span className="block text-[10px] lg:text-xs font-semibold text-ipu-sky">Hub</span>
           </span>
         </Link>
-        <nav className="hidden items-center gap-1 md:flex">
+        <nav className="hidden items-center gap-1 lg:gap-1.5 md:flex">
           {nav.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className={`rounded-lg px-3.5 py-2 text-sm font-semibold transition-all ${
+              className={`rounded-lg px-2.5 lg:px-3.5 py-1.5 lg:py-2 text-xs lg:text-sm font-bold whitespace-nowrap transition-all shrink-0 ${
                 item.highlight
                   ? "bg-gradient-to-r from-ipu-blue to-ipu-sky text-white shadow-sm hover:shadow-md"
-                  : "text-slate-700 hover:bg-ipu-mist hover:text-ipu-blue"
+                  : item.href === "/round1-cutoffs"
+                  ? "bg-amber-50 text-amber-900 border border-amber-200/60 hover:bg-amber-100/80 shadow-2xs font-extrabold"
+                  : "text-slate-800 hover:bg-blue-50 hover:text-ipu-blue"
               }`}
             >
               {item.label}
             </Link>
           ))}
         </nav>
-        <div className="hidden items-center gap-2 md:flex">
+        <div className="hidden items-center gap-2 md:flex shrink-0">
           <a
             href="https://wa.me/917827465966?text=Hi,%20I%20want%20to%20join%20the%20community"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-1.5 rounded-lg bg-green-50 px-3 py-2 text-sm font-bold text-green-600 transition hover:bg-green-100 mr-2"
+            className="flex items-center gap-1.5 rounded-lg bg-green-50 px-2.5 lg:px-3.5 py-1.5 lg:py-2 text-xs lg:text-sm font-extrabold text-green-700 border border-green-200/60 transition hover:bg-green-100 whitespace-nowrap"
           >
-            <MessageCircle size={16} /> WhatsApp Community
+            <MessageCircle size={15} /> WhatsApp Community
           </a>
           {user ? (
             <>
-              <Link href="/dashboard" className="rounded-lg bg-ipu-blue px-4 py-2 text-sm font-bold text-white hover:bg-blue-800 transition">
+              <Link href="/dashboard" className="rounded-lg bg-ipu-blue px-3 lg:px-4 py-1.5 lg:py-2 text-xs lg:text-sm font-bold text-white hover:bg-blue-800 transition whitespace-nowrap">
                 Dashboard
               </Link>
-              <button onClick={async () => { const { signOut } = await import("firebase/auth"); const { getFirebaseAuth } = await import("@/lib/firebase"); await signOut(getFirebaseAuth()); }} className="rounded-lg border border-blue-100 px-3 py-2 text-sm font-semibold hover:bg-slate-50 transition">
+              <button onClick={async () => { const { signOut } = await import("firebase/auth"); const { getFirebaseAuth } = await import("@/lib/firebase"); await signOut(getFirebaseAuth()); }} className="rounded-lg border border-blue-100 px-2.5 lg:px-3 py-1.5 lg:py-2 text-xs lg:text-sm font-bold hover:bg-slate-50 transition whitespace-nowrap">
                 Sign out
               </button>
             </>
           ) : (
-            <Link href="/dashboard" className="flex items-center gap-2 rounded-lg bg-ipu-blue px-4 py-2 text-sm font-bold text-white hover:bg-blue-800 transition">
-              <LogIn size={17} /> Login
+            <Link href="/dashboard" className="flex items-center gap-1.5 rounded-lg bg-ipu-blue px-3.5 lg:px-4 py-1.5 lg:py-2 text-xs lg:text-sm font-bold text-white hover:bg-blue-800 transition shadow-sm whitespace-nowrap">
+              <LogIn size={16} /> Login
             </Link>
           )}
         </div>
