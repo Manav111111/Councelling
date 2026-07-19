@@ -6,7 +6,7 @@ import { useState } from "react";
 import { useAuth } from "@/components/AuthProvider";
 
 const nav = [
-  { href: "/round1-cutoffs", label: "⚡ Round 1 Cutoffs" },
+  { href: "/cutoffs", label: "⚡ Cutoffs Explorer" },
   { href: "/colleges", label: "Colleges" },
   { href: "/predict", label: "B.Tech Predictor" },
   { href: "/cet-predict", label: "CET Predictor" },

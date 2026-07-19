@@ -1,0 +1,83 @@
+{
+  "metadata": {
+    "entityType": "CollegeProfile",
+    "slug": "dtu",
+    "sourceFile": "lib/college-data.ts",
+    "sourceUrl": "https://ipuhub.com/colleges/dtu",
+    "lastUpdated": "2026-07-08T20:10:01.177Z"
+  },
+  "profile": {
+    "code": "DTU",
+    "slug": "dtu",
+    "fullName": "Delhi Technological University",
+    "shortName": "DTU",
+    "alsoKnownAs": [
+      "DCE",
+      "Delhi College of Engineering"
+    ],
+    "university": "State University",
+    "type": "government",
+    "location": "Shahbad Daulatpur, Main Bawana Road, Delhi - 110042",
+    "established": 1941,
+    "accreditation": [
+      "NAAC A+",
+      "AICTE",
+      "UGC"
+    ],
+    "nirfRank": "30",
+    "fees": {
+      "annualTuition": 236000,
+      "total4yr": 950000,
+      "currency": "INR"
+    },
+    "branches": [
+      "CSE",
+      "IT",
+      "Software Engineering",
+      "ECE",
+      "EE",
+      "Mechanical",
+      "Civil",
+      "Biotechnology",
+      "Engineering Physics"
+    ],
+    "admission": {
+      "exam": [
+        "JEE Main (through JAC Delhi)"
+      ],
+      "minPcmPercent": 60,
+      "quota": "No management quota",
+      "delhiReservationPercent": 85
+    },
+    "placements": {
+      "year": 2025,
+      "placementPercent": 88.5,
+      "avgPackageLpa": 15.4,
+      "highestPackageLpa": 85,
+      "topRecruiters": [
+        "Microsoft",
+        "Google",
+        "Adobe",
+        "Amazon",
+        "Apple",
+        "Atlassian",
+        "Samsung R&D",
+        "Deloitte",
+        "Goldman Sachs",
+        "Bain & Company"
+      ]
+    },
+    "campus": {
+      "sizeAcres": 164,
+      "hostel": true,
+      "metroAccess": true,
+      "nearestMetro": "Rithala Metro"
+    },
+    "overview": "One of India's top state engineering universities, DTU (formerly Delhi College of Engineering) is highly regarded for strong placements, coding culture, tech societies, and alumni network. It is especially famous for CSE, IT, SE, and ECE branches, with major tech companies recruiting every year.",
+    "mapEmbed": "https://www.google.com/maps?q=Delhi+Technological+University&output=embed",
+    "image": "/DTU.jpg",
+    "gallery": [
+      "/DTU.jpg"
+    ]
+  }
+}

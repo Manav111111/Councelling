@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "entityType": "CollegeProfile",
+    "slug": "usict",
+    "sourceFile": "lib/college-data.ts",
+    "sourceUrl": "https://ipuhub.com/colleges/usict",
+    "lastUpdated": "2026-07-08T20:10:01.177Z"
+  },
+  "profile": {
+    "code": "USICT",
+    "slug": "usict",
+    "fullName": "University School of Information, Communication & Technology",
+    "shortName": "USICT",
+    "university": "GGSIPU",
+    "type": "government",
+    "location": "Sector 16C, Dwarka, New Delhi - 110078",
+    "established": 1999,
+    "accreditation": [
+      "NAAC-A",
+      "AICTE",
+      "UGC"
+    ],
+    "nirfRank": "#89 Engineering (2025)",
+    "fees": {
+      "annualTuition": 190000,
+      "total4yr": 800000,
+      "currency": "INR"
+    },
+    "branches": [
+      "CSE",
+      "IT",
+      "ECE"
+    ],
+    "admission": {
+      "exam": [
+        "JEE Main",
+        "IPU CET"
+      ],
+      "minPcmPercent": 55,
+      "quota": "No management quota (govt institute)",
+      "delhiReservationPercent": 85
+    },
+    "placements": {
+      "year": 2024,
+      "placementPercent": 80,
+      "avgPackageLpa": 8.5,
+      "highestPackageLpa": 41.2,
+      "medianPackageLpa": 7.2,
+      "totalCompanies": 70,
+      "topRecruiters": [
+        "Microsoft",
+        "Adobe",
+        "Amazon",
+        "Cvent",
+        "AB InBev",
+        "TCS Prime",
+        "Deloitte",
+        "Samsung R&D"
+      ]
+    },
+    "campus": {
+      "sizeAcres": 60,
+      "hostel": true,
+      "metroAccess": true
+    },
+    "overview": "The premier government university school under GGSIPU, USICT is the most coveted campus school offering B.Tech in CSE, IT, and ECE. Known for highly competitive cutoffs, top-tier placements, and strong campus culture at the Dwarka campus.",
+    "image": "/usict.webp",
+    "gallery": [
+      "https://res.cloudinary.com/demo/image/upload/w_600,h_420,c_fill,q_auto/f_auto/cld-sample-4.jpg",
+      "https://res.cloudinary.com/demo/image/upload/w_600,h_420,c_fill,q_auto/f_auto/cld-sample-2.jpg",
+      "https://res.cloudinary.com/demo/image/upload/w_600,h_420,c_fill,q_auto/f_auto/cld-sample-3.jpg"
+    ],
+    "mapEmbed": "https://www.google.com/maps?q=USICT+GGSIPU+Dwarka&output=embed"
+  }
+}

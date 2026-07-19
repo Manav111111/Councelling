@@ -1,0 +1,81 @@
+{
+  "metadata": {
+    "entityType": "CollegeProfile",
+    "slug": "adgitm",
+    "sourceFile": "lib/college-data.ts",
+    "sourceUrl": "https://ipuhub.com/colleges/adgitm",
+    "lastUpdated": "2026-07-08T20:10:01.177Z"
+  },
+  "profile": {
+    "code": "ADGITM",
+    "slug": "adgitm",
+    "fullName": "Dr. Akhilesh Das Gupta Institute of Technology & Management",
+    "shortName": "ADGITM",
+    "alsoKnownAs": [
+      "NIEC",
+      "Northern India Engineering College"
+    ],
+    "university": "GGSIPU",
+    "type": "private",
+    "location": "FC-26, Shastri Park, New Delhi - 110053",
+    "established": 2003,
+    "accreditation": [
+      "AICTE",
+      "BCI",
+      "NBA",
+      "NAAC-A"
+    ],
+    "nirfRank": null,
+    "fees": {
+      "annualTuition": 160000,
+      "total4yr": 640000,
+      "currency": "INR"
+    },
+    "branches": [
+      "CSE",
+      "IT",
+      "ECE",
+      "ME",
+      "EEE",
+      "Instrumentation",
+      "AI-ML",
+      "Data Science"
+    ],
+    "admission": {
+      "exam": [
+        "JEE Main",
+        "IPU CET"
+      ],
+      "minPcmPercent": 55,
+      "quota": "10% management quota"
+    },
+    "placements": {
+      "year": 2024,
+      "placementPercent": 53,
+      "avgPackageLpa": 4.8,
+      "highestPackageLpa": 48,
+      "totalStudentsPlaced": 1500,
+      "topRecruiters": [
+        "TCS",
+        "Infosys",
+        "Capgemini",
+        "HCL",
+        "Wipro",
+        "IBM"
+      ]
+    },
+    "campus": {
+      "sizeAcres": 8.08,
+      "hostel": true,
+      "metroAccess": true
+    },
+    "overview": "Formerly known as Northern India Engineering College (NIEC), ADGITM at Shastri Park offers the most affordable fees among top IPU colleges at ₹1.6L/year. NAAC-A accredited with hostel facilities and a broad range of branches.",
+    "image": "/adgips.jpg",
+    "gallery": [
+      "https://res.cloudinary.com/demo/image/upload/w_600,h_420,c_fill,q_auto/f_auto/cld-sample-3.jpg",
+      "https://res.cloudinary.com/demo/image/upload/w_600,h_420,c_fill,q_auto/f_auto/cld-sample-2.jpg",
+      "https://res.cloudinary.com/demo/image/upload/w_600,h_420,c_fill,q_auto/f_auto/sample.jpg"
+    ],
+    "mapEmbed": "https://www.google.com/maps?q=ADGITM+Shastri+Park+Delhi&output=embed"
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "metadata": {
+    "title": "GGSIPU Counselling Frequently Asked Questions (Structured Knowledge Base)",
+    "totalFaqs": 11,
+    "lastUpdated": "2026-07-08T20:10:01.177Z"
+  },
+  "faqs": [
+    {
+      "q": "Why should I take your subscription for counselling?",
+      "a": "Our premium subscription provides complete end-to-end support for IPU admissions: Weekly Google Meets with Mentors, instant alerts on important notices, registration & choice filling assistance, a personalized choice list tailored to your rank, exclusive community access, and ongoing guidance even after entering college.",
+      "topic": "Premium Services & Mentorship",
+      "tags": [
+        "Subscription",
+        "Mentorship",
+        "Choice Filling Assistance"
+      ]
+    },
+    {
+      "q": "What is IPU counselling?",
+      "a": "IPU counselling is the online centralized seat allotment process for admission into Guru Gobind Singh Indraprastha University affiliated colleges based on entrance ranks (such as JEE Mains CRL for B.Tech), category quotas, and region reservations.",
+      "topic": "General Rules",
+      "tags": [
+        "IPU Counselling",
+        "Eligibility",
+        "Seat Allotment"
+      ]
+    },
+    {
+      "q": "How should I arrange my choice list?",
+      "a": "Place colleges and branches in the exact order you genuinely prefer, not solely based on last year's cutoff trends. Start with dream options at the top, followed by realistic matches, and finally safe backup choices.",
+      "topic": "Choice Filling Guidance",
+      "tags": [
+        "Choice List",
+        "Preference Order",
+        "Strategy"
+      ]
+    },
+    {
+      "q": "Can I upgrade after Round 1?",
+      "a": "Yes. By selecting the 'Float' (Upgrade) option after paying the ₹60,000 Part Academic Fee in Round 1, your current seat is temporarily reserved while you participate in Round 2 and Round 3 for a higher-preference choice.",
+      "topic": "Upgrades & Floating",
+      "tags": [
+        "Float",
+        "Upgrade",
+        "Round 1",
+        "Round 2"
+      ]
+    },
+    {
+      "q": "Which documents are needed for physical reporting?",
+      "a": "Key documents include JEE Mains rank card and admit card, Class 10th & 12th marksheets, category/reservation certificates (if applicable), Aadhaar card/photo ID, 6 passport photos, provisional allotment letter, and the ₹60,000 Part Academic Fee payment receipt.",
+      "topic": "Reporting & Documentation",
+      "tags": [
+        "Documents",
+        "Reporting",
+        "Verification"
+      ]
+    },
+    {
+      "q": "How do category certificates affect seat allotment?",
+      "a": "Reserved category certificates allow candidates to compete for statutory reserved seats under quotas like OBC, SC, ST, EWS, and Defence. Invalid, outdated, or wrongly issued certificates (e.g., non-Delhi OBC certificate presented for Delhi OBC quota) can lead to immediate seat cancellation during physical verification.",
+      "topic": "Reporting & Documentation",
+      "tags": [
+        "Category Certificates",
+        "OBC",
+        "SC ST",
+        "Reservation Rules"
+      ]
+    },
+    {
+      "q": "Do cutoffs change every year?",
+      "a": "Yes, closing ranks fluctuate every year depending on the total number of applicants, exam difficulty, seat intake adjustments, and branch popularity trends. While historical cutoffs offer a strong baseline estimate, they do not guarantee admission.",
+      "topic": "Cutoffs & Prediction",
+      "tags": [
+        "Cutoff Trends",
+        "Closing Ranks",
+        "Variations"
+      ]
+    },
+    {
+      "q": "Should I prefer branch or college?",
+      "a": "If you have a clear passion for coding and software engineering, prioritize tech branches (CSE/IT/AI-ML) at a strong private college like MAIT or MSIT. If you value university branding, campus life, or non-engineering career paths (UPSC/MBA), a top university campus like DTU or USICT is preferable even with a different branch.",
+      "topic": "Career & Academic Guidance",
+      "tags": [
+        "Branch vs College",
+        "CSE",
+        "IT",
+        "Brand Value"
+      ]
+    },
+    {
+      "q": "How does sliding or floating work?",
+      "a": "'Floating' allows you to hold your current seat across different counselling rounds while seeking an upgrade from your higher preference choices. 'Sliding' typically occurs after the regular rounds among candidates who have already confirmed their admission, allowing branch upgrades within the same institution if vacancies arise.",
+      "topic": "Upgrades & Floating",
+      "tags": [
+        "Sliding Round",
+        "Floating",
+        "Internal Upgrades"
+      ]
+    },
+    {
+      "q": "What happens in the stray vacancy / spot round?",
+      "a": "The spot round or stray vacancy round is conducted to fill remaining vacant seats after regular counselling rounds conclude. Participation rules vary, and allotments happen rapidly based on available vacancies. It is high-risk but often yields significant cutoff drops.",
+      "topic": "Spot Rounds & Vacancies",
+      "tags": [
+        "Spot Round",
+        "Stray Vacancy",
+        "Last Round Allotment"
+      ]
+    },
+    {
+      "q": "Can I save predictions and compare colleges on IPU Hub?",
+      "a": "Yes, users can use the AI Rank Predictor and College Comparison tools to evaluate multiple campus options, compare fee structures and placement outcomes side-by-side, and save target lists for choice filling.",
+      "topic": "Tools & Platform Features",
+      "tags": [
+        "AI Predictor",
+        "College Comparison",
+        "IPU Hub Tools"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "title": "GGSIPU B.Tech Seat Matrix Snapshot across Major Colleges and Branches",
+    "lastUpdated": "2026-07-08T20:10:01.177Z"
+  },
+  "seatMatrix": [
+    {
+      "id": "mait-cse-gen",
+      "college": "MAIT",
+      "branch": "CSE",
+      "category": "General",
+      "seats": 180
+    },
+    {
+      "id": "msit-it-gen",
+      "college": "MSIT",
+      "branch": "IT",
+      "category": "General",
+      "seats": 120
+    },
+    {
+      "id": "usict-cse-gen",
+      "college": "USICT",
+      "branch": "CSE",
+      "category": "General",
+      "seats": 60
+    },
+    {
+      "id": "bpit-ece-obc",
+      "college": "BPIT",
+      "branch": "ECE",
+      "category": "OBC",
+      "seats": 36
+    },
+    {
+      "id": "vips-bba-gen",
+      "college": "VIPS",
+      "branch": "BBA",
+      "category": "General",
+      "seats": 180
+    }
+  ]
+}

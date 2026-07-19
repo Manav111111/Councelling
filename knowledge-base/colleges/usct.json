@@ -1,0 +1,63 @@
+{
+  "metadata": {
+    "entityType": "CollegeProfile",
+    "slug": "usct",
+    "sourceFile": "lib/round1-cutoff-data.ts",
+    "sourceUrl": "https://ipuhub.com/colleges/usct",
+    "lastUpdated": "2026-07-08T20:10:01.177Z"
+  },
+  "profile": {
+    "id": "usct",
+    "code": "USCT",
+    "slug": "usct",
+    "fullName": "University School of Chemical Technology",
+    "shortName": "USCT",
+    "location": "Dwarka Campus, New Delhi",
+    "type": "government",
+    "subtype": "Govt / University Campus",
+    "established": 2000,
+    "accreditation": [
+      "AICTE",
+      "GGSIPU Affiliated"
+    ],
+    "overview": "University School of Chemical Technology (USCT) is a govt / university campus affiliated with Guru Gobind Singh Indraprastha University (GGSIPU), offering B.Tech programs across 2 specialized branches.",
+    "branches": [
+      "Chemical Engineering (Dual Degree)",
+      "Energy Engineering"
+    ],
+    "fees": {
+      "annualTuition": 95000,
+      "total4yr": 380000
+    },
+    "placements": {
+      "year": 2025,
+      "avgPackageLpa": 7.5,
+      "highestPackageLpa": 35,
+      "placementPercent": 80,
+      "topRecruiters": [
+        "TCS",
+        "Infosys",
+        "Wipro",
+        "Cognizant"
+      ],
+      "note": "Standard GGSIPU placement pool"
+    },
+    "admission": {
+      "exam": [
+        "JEE Mains CRL (GGSIPU CET Counselling)"
+      ],
+      "quota": "85% Delhi / 15% Outside Delhi",
+      "delhiReservationPercent": 85,
+      "minPcmPercent": 55,
+      "shifts": [
+        "Shift I"
+      ]
+    },
+    "campus": {
+      "hostel": false,
+      "hostelNote": "Check institution notice board for hostel details",
+      "metroAccess": true,
+      "nearestMetro": "Connected via Delhi Metro / NCR transit"
+    }
+  }
+}

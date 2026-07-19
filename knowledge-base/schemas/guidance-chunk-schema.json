@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "GuidanceSemanticChunk",
+  "description": "Schema for markdown chunks optimized for RAG embedding and filtering",
+  "type": "object",
+  "properties": {
+    "frontmatter": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "topic": {
+          "type": "string"
+        },
+        "targetAudience": {
+          "type": "string"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "source": {
+          "type": "string"
+        },
+        "lastUpdated": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "topic",
+        "tags",
+        "lastUpdated"
+      ]
+    },
+    "content": {
+      "type": "string"
+    }
+  }
+}

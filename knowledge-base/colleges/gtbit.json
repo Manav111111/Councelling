@@ -1,0 +1,76 @@
+{
+  "metadata": {
+    "entityType": "CollegeProfile",
+    "slug": "gtbit",
+    "sourceFile": "lib/college-data.ts",
+    "sourceUrl": "https://ipuhub.com/colleges/gtbit",
+    "lastUpdated": "2026-07-08T20:10:01.177Z"
+  },
+  "profile": {
+    "code": "GTBIT",
+    "slug": "gtbit",
+    "fullName": "Guru Tegh Bahadur Institute of Technology",
+    "shortName": "GTBIT",
+    "subtype": "Sikh minority institution",
+    "university": "GGSIPU",
+    "type": "private",
+    "location": "G.B. Pant Hospital Road, Rajouri Garden, New Delhi - 110064",
+    "established": 1999,
+    "accreditation": [
+      "AICTE",
+      "NAAC"
+    ],
+    "nirfRank": null,
+    "fees": {
+      "annualTuition": 200000,
+      "total4yr": 800000,
+      "currency": "INR"
+    },
+    "branches": [
+      "CSE",
+      "IT",
+      "ECE",
+      "ME",
+      "AI-ML",
+      "Data Science"
+    ],
+    "admission": {
+      "exam": [
+        "JEE Main",
+        "IPU CET"
+      ],
+      "minPcmPercent": 55,
+      "quota": "70% Sikh minority quota + 10% management quota"
+    },
+    "placements": {
+      "year": 2024,
+      "placementPercent": 58,
+      "avgPackageLpa": 5.5,
+      "highestPackageLpa": 45,
+      "medianPackageLpa": 5,
+      "topRecruiters": [
+        "HSBC",
+        "Infosys",
+        "Amazon",
+        "Paytm",
+        "HCL",
+        "Ericsson",
+        "American Express"
+      ]
+    },
+    "campus": {
+      "sizeAcres": null,
+      "hostel": false,
+      "metroAccess": true,
+      "nearestMetro": "Rajouri Garden"
+    },
+    "overview": "A Sikh minority institution near Rajouri Garden metro. GTBIT has 70% seats reserved for Sikh minority students, making it unique in the IPU ecosystem. It offers newer branches like AI-ML and Data Science alongside core engineering.",
+    "image": "/guru tej bahadur.jpg",
+    "gallery": [
+      "https://res.cloudinary.com/demo/image/upload/w_600,h_420,c_fill,q_auto/f_auto/cld-sample-2.jpg",
+      "https://res.cloudinary.com/demo/image/upload/w_600,h_420,c_fill,q_auto/f_auto/cld-sample-5.jpg",
+      "https://res.cloudinary.com/demo/image/upload/w_600,h_420,c_fill,q_auto/f_auto/cld-sample-3.jpg"
+    ],
+    "mapEmbed": "https://www.google.com/maps?q=GTBIT+Rajouri+Garden+Delhi&output=embed"
+  }
+}

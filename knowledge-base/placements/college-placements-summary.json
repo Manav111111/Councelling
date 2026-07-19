@@ -1,0 +1,261 @@
+{
+  "metadata": {
+    "title": "GGSIPU Engineering Colleges Placement Statistics (2024-25)",
+    "metric": "Lakhs Per Annum (LPA)",
+    "lastUpdated": "2026-07-08T20:10:01.177Z"
+  },
+  "placements": [
+    {
+      "collegeCode": "USICT",
+      "shortName": "USICT",
+      "fullName": "University School of Information, Communication & Technology",
+      "type": "government",
+      "placementYear": 2024,
+      "avgPackageLPA": 8.5,
+      "highestPackageLPA": 41.2,
+      "placementPercentage": 80,
+      "topRecruiters": [
+        "Microsoft",
+        "Adobe",
+        "Amazon",
+        "Cvent",
+        "AB InBev",
+        "TCS Prime",
+        "Deloitte",
+        "Samsung R&D"
+      ],
+      "specialNote": null
+    },
+    {
+      "collegeCode": "MAIT",
+      "shortName": "MAIT",
+      "fullName": "Maharaja Agrasen Institute of Technology",
+      "type": "private",
+      "placementYear": 2024,
+      "avgPackageLPA": 8,
+      "highestPackageLPA": 64,
+      "placementPercentage": 78,
+      "topRecruiters": [
+        "Amazon",
+        "Microsoft",
+        "Google",
+        "ZS Associates",
+        "Deloitte",
+        "TCS",
+        "HCL",
+        "Flipkart",
+        "D.E. Shaw",
+        "Infosys"
+      ],
+      "specialNote": null
+    },
+    {
+      "collegeCode": "MSIT",
+      "shortName": "MSIT",
+      "fullName": "Maharaja Surajmal Institute of Technology",
+      "type": "private",
+      "placementYear": 2025,
+      "avgPackageLPA": 7,
+      "highestPackageLPA": 50,
+      "placementPercentage": 73,
+      "topRecruiters": [
+        "Google",
+        "Microsoft",
+        "Amazon",
+        "Adobe",
+        "Samsung",
+        "Huawei",
+        "ION Trading",
+        "Josh Tech Group",
+        "ZS Associates",
+        "Infosys"
+      ],
+      "specialNote": null
+    },
+    {
+      "collegeCode": "BPIT",
+      "shortName": "BPIT",
+      "fullName": "Bhagwan Parshuram Institute of Technology",
+      "type": "private",
+      "placementYear": 2024,
+      "avgPackageLPA": 5.5,
+      "highestPackageLPA": 50,
+      "placementPercentage": 63,
+      "topRecruiters": [
+        "Amazon",
+        "Zomato",
+        "Newgen",
+        "Cognizant",
+        "Accenture",
+        "TCS",
+        "Wipro",
+        "Infosys",
+        "Hitachi"
+      ],
+      "specialNote": null
+    },
+    {
+      "collegeCode": "BVCOE",
+      "shortName": "BVCOE",
+      "fullName": "Bharati Vidyapeeth's College of Engineering",
+      "type": "private",
+      "placementYear": 2024,
+      "avgPackageLPA": 6,
+      "highestPackageLPA": 64,
+      "placementPercentage": 68,
+      "topRecruiters": [
+        "IBM",
+        "Adobe",
+        "Amazon",
+        "Infosys",
+        "Adani Group",
+        "TCS",
+        "Airtel",
+        "EY",
+        "HSBC",
+        "Cognizant"
+      ],
+      "specialNote": null
+    },
+    {
+      "collegeCode": "VIPS",
+      "shortName": "VIPS",
+      "fullName": "Vivekananda Institute of Professional Studies",
+      "type": "private",
+      "placementYear": 2024,
+      "avgPackageLPA": 4.4,
+      "highestPackageLPA": 8,
+      "placementPercentage": 43,
+      "topRecruiters": [
+        "Wipro",
+        "Oracle",
+        "Infosys",
+        "Amazon",
+        "Deloitte"
+      ],
+      "specialNote": "Engineering placements separate from law/management"
+    },
+    {
+      "collegeCode": "GTBIT",
+      "shortName": "GTBIT",
+      "fullName": "Guru Tegh Bahadur Institute of Technology",
+      "type": "private",
+      "placementYear": 2024,
+      "avgPackageLPA": 5.5,
+      "highestPackageLPA": 45,
+      "placementPercentage": 58,
+      "topRecruiters": [
+        "HSBC",
+        "Infosys",
+        "Amazon",
+        "Paytm",
+        "HCL",
+        "Ericsson",
+        "American Express"
+      ],
+      "specialNote": null
+    },
+    {
+      "collegeCode": "ADGITM",
+      "shortName": "ADGITM",
+      "fullName": "Dr. Akhilesh Das Gupta Institute of Technology & Management",
+      "type": "private",
+      "placementYear": 2024,
+      "avgPackageLPA": 4.8,
+      "highestPackageLPA": 48,
+      "placementPercentage": 53,
+      "topRecruiters": [
+        "TCS",
+        "Infosys",
+        "Capgemini",
+        "HCL",
+        "Wipro",
+        "IBM"
+      ],
+      "specialNote": null
+    },
+    {
+      "collegeCode": "HMR",
+      "shortName": "HMR",
+      "fullName": "HMR Institute of Technology & Management",
+      "type": "private",
+      "placementYear": 2024,
+      "avgPackageLPA": 5.35,
+      "highestPackageLPA": 15,
+      "placementPercentage": 83,
+      "topRecruiters": [
+        "KPMG",
+        "TCS",
+        "IBM",
+        "Kodnest",
+        "Planet Spark",
+        "McKinley Rice",
+        "Jaro Education",
+        "Medtronic"
+      ],
+      "specialNote": null
+    },
+    {
+      "collegeCode": "USAR",
+      "shortName": "USAR",
+      "fullName": "University School of Automation & Robotics",
+      "type": "government",
+      "placementYear": 2024,
+      "avgPackageLPA": 5.8,
+      "highestPackageLPA": 12,
+      "placementPercentage": 48,
+      "topRecruiters": [
+        "TCS",
+        "Infosys",
+        "Wipro",
+        "HCL",
+        "Robotics & AI startups"
+      ],
+      "specialNote": "Relatively new school (est. 2019), placement data still maturing."
+    },
+    {
+      "collegeCode": "JEMTEC",
+      "shortName": "JEMTEC",
+      "fullName": "JIMS Engineering Management Technical Campus",
+      "type": "private",
+      "placementYear": 2024,
+      "avgPackageLPA": 6,
+      "highestPackageLPA": 20,
+      "placementPercentage": 70,
+      "topRecruiters": [
+        "TCS",
+        "Infosys",
+        "Wipro",
+        "Amazon",
+        "Deloitte",
+        "Kellton Tech",
+        "Rapipay",
+        "HCL"
+      ],
+      "specialNote": null
+    },
+    {
+      "collegeCode": "DTU",
+      "shortName": "DTU",
+      "fullName": "Delhi Technological University",
+      "type": "government",
+      "placementYear": 2025,
+      "avgPackageLPA": 15.4,
+      "highestPackageLPA": 85,
+      "placementPercentage": 88.5,
+      "topRecruiters": [
+        "Microsoft",
+        "Google",
+        "Adobe",
+        "Amazon",
+        "Apple",
+        "Atlassian",
+        "Samsung R&D",
+        "Deloitte",
+        "Goldman Sachs",
+        "Bain & Company"
+      ],
+      "specialNote": null
+    }
+  ]
+}

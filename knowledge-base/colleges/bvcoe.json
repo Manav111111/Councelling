@@ -1,0 +1,81 @@
+{
+  "metadata": {
+    "entityType": "CollegeProfile",
+    "slug": "bvcoe",
+    "sourceFile": "lib/college-data.ts",
+    "sourceUrl": "https://ipuhub.com/colleges/bvcoe",
+    "lastUpdated": "2026-07-08T20:10:01.177Z"
+  },
+  "profile": {
+    "code": "BVCOE",
+    "slug": "bvcoe",
+    "fullName": "Bharati Vidyapeeth's College of Engineering",
+    "shortName": "BVCOE",
+    "university": "GGSIPU",
+    "type": "private",
+    "location": "A-4, Paschim Vihar, Rohtak Road, New Delhi - 110063",
+    "established": 1999,
+    "accreditation": [
+      "AICTE",
+      "NBA",
+      "NAAC-A",
+      "ISO 9001:2015"
+    ],
+    "nirfRank": "201-300 Engineering (2024)",
+    "fees": {
+      "annualTuition": 170000,
+      "total4yr": 740000,
+      "currency": "INR"
+    },
+    "branches": [
+      "CSE",
+      "IT",
+      "ECE",
+      "EEE",
+      "Instrumentation & Control"
+    ],
+    "admission": {
+      "exam": [
+        "JEE Main",
+        "IPU CET"
+      ],
+      "minPcmPercent": 55,
+      "quota": "10% management quota"
+    },
+    "placements": {
+      "year": 2024,
+      "placementPercent": 68,
+      "avgPackageLpa": 6,
+      "highestPackageLpa": 64,
+      "medianPackageLpa": 6.5,
+      "totalStudentsPlaced": 335,
+      "topRecruiters": [
+        "IBM",
+        "Adobe",
+        "Amazon",
+        "Infosys",
+        "Adani Group",
+        "TCS",
+        "Airtel",
+        "EY",
+        "HSBC",
+        "Cognizant"
+      ]
+    },
+    "campus": {
+      "sizeAcres": null,
+      "hostel": true,
+      "hostelNote": "Girls hostel only",
+      "metroAccess": true,
+      "nearestMetro": "Paschim Vihar East"
+    },
+    "overview": "A NAAC-A accredited private engineering college in Paschim Vihar with impressive placement stats — 85% placement rate and a highest package of 64 LPA. Offers Instrumentation & Control as a unique branch alongside standard engineering programs.",
+    "image": "/bvcoe.webp",
+    "gallery": [
+      "https://res.cloudinary.com/demo/image/upload/w_600,h_420,c_fill,q_auto/f_auto/cld-sample-5.jpg",
+      "https://res.cloudinary.com/demo/image/upload/w_600,h_420,c_fill,q_auto/f_auto/sample.jpg",
+      "https://res.cloudinary.com/demo/image/upload/w_600,h_420,c_fill,q_auto/f_auto/cld-sample-4.jpg"
+    ],
+    "mapEmbed": "https://www.google.com/maps?q=BVCOE+Paschim+Vihar+Delhi&output=embed"
+  }
+}

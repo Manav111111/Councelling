@@ -1,0 +1,235 @@
+{
+  "metadata": {
+    "title": "GGSIPU Senior Student Mentors Directory",
+    "totalMentors": 10,
+    "lastUpdated": "2026-07-08T20:10:01.177Z"
+  },
+  "mentors": [
+    {
+      "id": "manav-gupta",
+      "name": "Manav Gupta",
+      "college": "ADGIPS",
+      "branch": "CS",
+      "batch": "2024",
+      "photo": "/MANAV.webp",
+      "bio": "Computer Science mentor from the 2024 batch, helping you make the right choices for your IPU counselling.",
+      "journey": "Navigated the IPU counselling process to secure a top Computer Science seat.",
+      "tips": [
+        "Lock ambitious choices first",
+        "Keep commute realistic",
+        "Compare branch demand across rounds"
+      ],
+      "tags": [
+        "Computer Science",
+        "2024 batch"
+      ],
+      "linkedin": "https://linkedin.com",
+      "instagram": "https://instagram.com",
+      "bookingUrl": "https://wa.me/917827465966?text=Hi,%20I%20want%20to%20book%20a%20session%20with%20Manav%20Gupta"
+    },
+    {
+      "id": "mohit-aggarwal",
+      "name": "Mohit Aggarwal",
+      "college": "ADGIPS",
+      "branch": "CS",
+      "batch": "2024",
+      "photo": "/mohit.webp",
+      "bio": "Computer Science mentor from the 2024 batch with expertise in choice filling.",
+      "journey": "Secured a Computer Science seat by carefully planning the preference list.",
+      "tips": [
+        "Do not skip campus options",
+        "Track last two years of round movement",
+        "Keep documents ready before allotment"
+      ],
+      "tags": [
+        "Computer Science",
+        "2024 batch"
+      ],
+      "linkedin": "https://linkedin.com",
+      "instagram": "https://instagram.com",
+      "bookingUrl": "https://wa.me/917827465966?text=Hi,%20I%20want%20to%20book%20a%20session%20with%20Mohit%20Aggarwal"
+    },
+    {
+      "id": "prashant-kumar",
+      "name": "Prashant Kumar",
+      "college": "ADGIPS",
+      "branch": "CS",
+      "batch": "2024",
+      "photo": "/prashant.webp",
+      "bio": "Computer Science mentor helping you understand branch tradeoffs.",
+      "journey": "Successfully navigated the cutoff variations to get the desired branch.",
+      "tips": [
+        "Keep original documents sorted",
+        "Check reporting instructions twice",
+        "Talk to seniors before freezing"
+      ],
+      "tags": [
+        "Computer Science",
+        "2024 batch"
+      ],
+      "linkedin": "https://linkedin.com",
+      "instagram": "https://instagram.com",
+      "bookingUrl": "https://wa.me/917827465966?text=Hi,%20I%20want%20to%20book%20a%20session%20with%20Prashant%20Kumar"
+    },
+    {
+      "id": "sambhav-yadav",
+      "name": "Sambhav Yadav",
+      "college": "ADGIPS",
+      "branch": "CS",
+      "batch": "2024",
+      "photo": "/sambhav (2).jpg",
+      "bio": "Expert mentor for Computer Science aspirants.",
+      "journey": "Used upgrade rounds strategically to land a top college.",
+      "tips": [
+        "Focus on your core interest",
+        "Understand the sliding round",
+        "Always keep a backup plan"
+      ],
+      "tags": [
+        "Computer Science",
+        "2024 batch"
+      ],
+      "linkedin": "https://linkedin.com",
+      "instagram": "https://instagram.com",
+      "bookingUrl": "https://wa.me/917827465966?text=Hi,%20I%20want%20to%20book%20a%20session%20with%20Sambhav%20Yadav"
+    },
+    {
+      "id": "shanu-singh",
+      "name": "Shanu Singh",
+      "college": "HMR",
+      "branch": "AIDS",
+      "batch": "2024",
+      "photo": "/shanu.webp",
+      "bio": "AIDS mentor from HMR 2024 batch helping you with specialized branch choices.",
+      "journey": "Found her passion in AI and Data Science through the IPU counselling system.",
+      "tips": [
+        "Research specialized branches early",
+        "Check HMR faculty profiles",
+        "Don't ignore newer specializations"
+      ],
+      "tags": [
+        "AIDS",
+        "HMR",
+        "2024 batch"
+      ],
+      "linkedin": "https://linkedin.com",
+      "instagram": "https://instagram.com",
+      "bookingUrl": "https://wa.me/917827465966?text=Hi,%20I%20want%20to%20book%20a%20session%20with%20Shanu%20Singh"
+    },
+    {
+      "id": "manish-gupta",
+      "name": "Manish Gupta",
+      "college": "GTBIT",
+      "branch": "IT",
+      "batch": "2025",
+      "photo": "/manish.jpg",
+      "bio": "IT mentor from GTBIT specializing in choice filling and document verification.",
+      "journey": "Guided by mentors to secure an IT seat at GTBIT.",
+      "tips": [
+        "Verify all your category certificates",
+        "Check the official IPU notices daily",
+        "Never miss the choice locking deadline"
+      ],
+      "tags": [
+        "IT",
+        "GTBIT",
+        "2025 batch"
+      ],
+      "linkedin": "https://linkedin.com",
+      "instagram": "https://instagram.com",
+      "bookingUrl": "https://wa.me/917827465966?text=Hi,%20I%20want%20to%20book%20a%20session%20with%20Manish%20Gupta"
+    },
+    {
+      "id": "nikhil",
+      "name": "Nikhil",
+      "college": "JIMS (JEMTEC)",
+      "branch": "CSE",
+      "batch": "2025",
+      "photo": "/nikhil.webp",
+      "bio": "CSE mentor from JIMS (JEMTEC) helping you navigate Greater Noida colleges.",
+      "journey": "Strategically chose JIMS for its growth and CSE focus.",
+      "tips": [
+        "Focus on location connectivity",
+        "Look at recent placement trends",
+        "Keep your document set ready"
+      ],
+      "tags": [
+        "CSE",
+        "JIMS",
+        "2025 batch"
+      ],
+      "linkedin": "https://linkedin.com",
+      "instagram": "https://instagram.com",
+      "bookingUrl": "https://wa.me/917827465966?text=Hi,%20I%20want%20to%20book%20a%20session%20with%20Nikhil"
+    },
+    {
+      "id": "dev-dtu",
+      "name": "Dev",
+      "college": "DTU",
+      "branch": "Civil",
+      "batch": "2025",
+      "photo": "/dev.jpg",
+      "bio": "Civil Engineering mentor from DTU helping you with engineering admissions.",
+      "journey": "Joined DTU to pursue my passion in Civil Engineering and explore the vibrant campus life.",
+      "tips": [
+        "Understand the JAC Delhi rounds carefully",
+        "Check internal branch sliding rules",
+        "Look at tech culture and societies in DTU"
+      ],
+      "tags": [
+        "Civil",
+        "DTU",
+        "2025 batch"
+      ],
+      "linkedin": "https://linkedin.com",
+      "instagram": "https://instagram.com",
+      "bookingUrl": "https://wa.me/917827465966?text=Hi,%20I%20want%20to%20book%20a%20session%20with%20Dev"
+    },
+    {
+      "id": "kartik-gupta",
+      "name": "Kartik Gupta",
+      "college": "MAIT",
+      "branch": "CSE",
+      "batch": "2025",
+      "photo": "/kartik gupta.jpg",
+      "bio": "CSE mentor from MAIT helping you with choice filling and technical branch selection.",
+      "journey": "Secured a CSE seat at MAIT through dedicated rank-based choice filling and understanding the counselling rounds.",
+      "tips": [
+        "Focus on MAIT's vibrant coding culture",
+        "Check recent placement trends for CSE/IT",
+        "Ensure all documents are ready for the reporting round"
+      ],
+      "tags": [
+        "CSE",
+        "MAIT",
+        "2025 batch"
+      ],
+      "linkedin": "https://linkedin.com",
+      "instagram": "https://instagram.com",
+      "bookingUrl": "https://wa.me/917827465966?text=Hi,%20I%20want%20to%20book%20a%20session%20with%20Kartik%20Gupta"
+    },
+    {
+      "id": "suraj-mathpal",
+      "name": "Suraj Mathpal",
+      "college": "BVCOE",
+      "branch": "IT",
+      "batch": "2024",
+      "photo": "/Suraj Mathpal.jpg",
+      "bio": "IT mentor from BVCOE with expertise in choice filling and reporting.",
+      "journey": "Strategically used the upgrade rounds to secure a top IT seat at BVCOE.",
+      "tips": [
+        "Understand the BVCOE campus culture",
+        "Check IT placement stats carefully",
+        "Always keep your document set ready"
+      ],
+      "tags": [
+        "IT",
+        "BVCOE",
+        "2024 batch"
+      ],
+      "linkedin": "https://linkedin.com",
+      "instagram": "https://instagram.com",
+      "bookingUrl": "https://wa.me/917827465966?text=Hi,%20I%20want%20to%20book%20a%20session%20with%20Suraj%20Mathpal"
+    }
+  ]
+}

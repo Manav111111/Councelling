@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "entityType": "CollegeProfile",
+    "slug": "vips",
+    "sourceFile": "lib/college-data.ts",
+    "sourceUrl": "https://ipuhub.com/colleges/vips",
+    "lastUpdated": "2026-07-08T20:10:01.177Z"
+  },
+  "profile": {
+    "code": "VIPS",
+    "slug": "vips",
+    "fullName": "Vivekananda Institute of Professional Studies",
+    "shortName": "VIPS",
+    "university": "GGSIPU",
+    "type": "private",
+    "location": "AU-14, Pitampura, New Delhi - 110034",
+    "established": 1999,
+    "accreditation": [
+      "AICTE",
+      "BCI",
+      "NAAC"
+    ],
+    "nirfRank": null,
+    "fees": {
+      "annualTuition": 170000,
+      "total4yr": 720000,
+      "currency": "INR"
+    },
+    "branches": [
+      "CSE",
+      "IT",
+      "Law (BA LLB)",
+      "Law (BBA LLB)",
+      "BBA"
+    ],
+    "admission": {
+      "exam": [
+        "JEE Main",
+        "IPU CET",
+        "CLAT"
+      ],
+      "minPcmPercent": 55,
+      "quota": "10% management quota"
+    },
+    "placements": {
+      "year": 2024,
+      "placementPercent": 43,
+      "avgPackageLpa": 4.4,
+      "highestPackageLpa": 8,
+      "medianPackageLpa": 4.03,
+      "topRecruiters": [
+        "Wipro",
+        "Oracle",
+        "Infosys",
+        "Amazon",
+        "Deloitte"
+      ],
+      "note": "Engineering placements separate from law/management"
+    },
+    "campus": {
+      "sizeAcres": null,
+      "hostel": false,
+      "metroAccess": true,
+      "nearestMetro": "Pitampura"
+    },
+    "overview": "A multi-disciplinary institute in Pitampura offering Engineering, Law, and Management programs under GGSIPU. VIPS is especially popular for its Law programs (BA LLB and BBA LLB) and is well-connected via the metro.",
+    "image": "/VIPS-Delhi.webp",
+    "gallery": [
+      "https://res.cloudinary.com/demo/image/upload/w_600,h_420,c_fill,q_auto/f_auto/cld-sample.jpg",
+      "https://res.cloudinary.com/demo/image/upload/w_600,h_420,c_fill,q_auto/f_auto/cld-sample-4.jpg",
+      "https://res.cloudinary.com/demo/image/upload/w_600,h_420,c_fill,q_auto/f_auto/sample.jpg"
+    ],
+    "mapEmbed": "https://www.google.com/maps?q=VIPS+Pitampura+Delhi&output=embed"
+  }
+}

@@ -1,0 +1,415 @@
+{
+  "metadata": {
+    "knowledgeBaseTitle": "IPU Hub Production-Ready RAG Knowledge Base",
+    "version": "2.0.0",
+    "description": "Complete structured JSON datasets, schemas, and semantic Markdown chunks optimized for an Agentic AI + RAG chatbot.",
+    "generatedAt": "2026-07-08T20:10:01.177Z",
+    "totalColleges": 12,
+    "totalRound1CutoffEntries": 717,
+    "totalCetCutoffEntries": 173,
+    "totalFaqs": 11,
+    "totalMentors": 10
+  },
+  "directories": {
+    "schemas": "schemas/",
+    "colleges": "colleges/",
+    "cutoffs": "cutoffs/",
+    "fees": "fees/",
+    "placements": "placements/",
+    "seatMatrix": "seat-matrix/",
+    "guidanceAndRules": "guidance-and-rules/",
+    "faqs": "faqs/",
+    "mentors": "mentors/"
+  },
+  "schemas": [
+    "schemas/college-schema.json",
+    "schemas/cutoff-schema.json",
+    "schemas/guidance-chunk-schema.json"
+  ],
+  "entities": [
+    {
+      "id": "college-usict",
+      "title": "University School of Information, Communication & Technology",
+      "entityType": "College Profile",
+      "category": "Colleges",
+      "path": "colleges/usict.json",
+      "tags": [
+        "USICT",
+        "USICT",
+        "government",
+        "CSE",
+        "IT",
+        "ECE"
+      ]
+    },
+    {
+      "id": "college-mait",
+      "title": "Maharaja Agrasen Institute of Technology",
+      "entityType": "College Profile",
+      "category": "Colleges",
+      "path": "colleges/mait.json",
+      "tags": [
+        "MAIT",
+        "MAIT",
+        "private",
+        "CSE",
+        "IT",
+        "ECE",
+        "EEE",
+        "ME",
+        "AI",
+        "Data Science",
+        "AI-ML"
+      ]
+    },
+    {
+      "id": "college-msit",
+      "title": "Maharaja Surajmal Institute of Technology",
+      "entityType": "College Profile",
+      "category": "Colleges",
+      "path": "colleges/msit.json",
+      "tags": [
+        "MSIT",
+        "MSIT",
+        "private",
+        "CSE",
+        "IT",
+        "ECE",
+        "EEE"
+      ]
+    },
+    {
+      "id": "college-bpit",
+      "title": "Bhagwan Parshuram Institute of Technology",
+      "entityType": "College Profile",
+      "category": "Colleges",
+      "path": "colleges/bpit.json",
+      "tags": [
+        "BPIT",
+        "BPIT",
+        "private",
+        "CSE",
+        "IT",
+        "ECE",
+        "EEE",
+        "ME"
+      ]
+    },
+    {
+      "id": "college-bvcoe",
+      "title": "Bharati Vidyapeeth's College of Engineering",
+      "entityType": "College Profile",
+      "category": "Colleges",
+      "path": "colleges/bvcoe.json",
+      "tags": [
+        "BVCOE",
+        "BVCOE",
+        "private",
+        "CSE",
+        "IT",
+        "ECE",
+        "EEE",
+        "Instrumentation & Control"
+      ]
+    },
+    {
+      "id": "college-vips",
+      "title": "Vivekananda Institute of Professional Studies",
+      "entityType": "College Profile",
+      "category": "Colleges",
+      "path": "colleges/vips.json",
+      "tags": [
+        "VIPS",
+        "VIPS",
+        "private",
+        "CSE",
+        "IT",
+        "Law (BA LLB)",
+        "Law (BBA LLB)",
+        "BBA"
+      ]
+    },
+    {
+      "id": "college-gtbit",
+      "title": "Guru Tegh Bahadur Institute of Technology",
+      "entityType": "College Profile",
+      "category": "Colleges",
+      "path": "colleges/gtbit.json",
+      "tags": [
+        "GTBIT",
+        "GTBIT",
+        "private",
+        "CSE",
+        "IT",
+        "ECE",
+        "ME",
+        "AI-ML",
+        "Data Science"
+      ]
+    },
+    {
+      "id": "college-adgitm",
+      "title": "Dr. Akhilesh Das Gupta Institute of Technology & Management",
+      "entityType": "College Profile",
+      "category": "Colleges",
+      "path": "colleges/adgitm.json",
+      "tags": [
+        "ADGITM",
+        "ADGITM",
+        "private",
+        "CSE",
+        "IT",
+        "ECE",
+        "ME",
+        "EEE",
+        "Instrumentation",
+        "AI-ML",
+        "Data Science"
+      ]
+    },
+    {
+      "id": "college-hmr",
+      "title": "HMR Institute of Technology & Management",
+      "entityType": "College Profile",
+      "category": "Colleges",
+      "path": "colleges/hmr.json",
+      "tags": [
+        "HMR",
+        "HMR",
+        "private",
+        "CSE",
+        "IT",
+        "ECE",
+        "AI",
+        "Cyber Security"
+      ]
+    },
+    {
+      "id": "college-usar",
+      "title": "University School of Automation & Robotics",
+      "entityType": "College Profile",
+      "category": "Colleges",
+      "path": "colleges/usar.json",
+      "tags": [
+        "USAR",
+        "USAR",
+        "government",
+        "Robotics & Automation",
+        "Artificial Intelligence",
+        "Data Science",
+        "Internet of Things (IoT)"
+      ]
+    },
+    {
+      "id": "college-jemtec",
+      "title": "JIMS Engineering Management Technical Campus",
+      "entityType": "College Profile",
+      "category": "Colleges",
+      "path": "colleges/jemtec.json",
+      "tags": [
+        "JEMTEC",
+        "JEMTEC",
+        "private",
+        "CSE",
+        "AIML",
+        "AIDS",
+        "CST",
+        "IT"
+      ]
+    },
+    {
+      "id": "college-dtu",
+      "title": "Delhi Technological University",
+      "entityType": "College Profile",
+      "category": "Colleges",
+      "path": "colleges/dtu.json",
+      "tags": [
+        "DTU",
+        "DTU",
+        "government",
+        "CSE",
+        "IT",
+        "Software Engineering",
+        "ECE",
+        "EE",
+        "Mechanical",
+        "Civil",
+        "Biotechnology",
+        "Engineering Physics"
+      ]
+    },
+    {
+      "id": "college-gtb4cec",
+      "title": "Guru Tegh Bahadur 4th Centenary Engineering College",
+      "entityType": "College Profile",
+      "category": "Colleges",
+      "path": "colleges/gtb4cec.json",
+      "tags": [
+        "GTB4CEC",
+        "Reputed Private Institute",
+        "Computer Science & Engineering",
+        "CSE - Artificial Intelligence & Machine Learning",
+        "CSE (Data Science)",
+        "Information Technology",
+        "Electronics & Communication Engineering"
+      ]
+    },
+    {
+      "id": "college-hmritm",
+      "title": "HMR Institute of Technology & Management",
+      "entityType": "College Profile",
+      "category": "Colleges",
+      "path": "colleges/hmritm.json",
+      "tags": [
+        "HMRITM",
+        "Reputed Private Institute",
+        "Computer Science & Engineering (Shift I)",
+        "Computer Science & Engineering (Shift II)",
+        "Computer Science & Technology",
+        "CSE (Cyber Security)",
+        "CSE - Artificial Intelligence & Machine Learning",
+        "CSE - Artificial Intelligence",
+        "CSE - Data Science",
+        "Information Technology",
+        "Electrical Engineering",
+        "Mechanical Engineering"
+      ]
+    },
+    {
+      "id": "college-dtc",
+      "title": "Delhi Technical Campus",
+      "entityType": "College Profile",
+      "category": "Colleges",
+      "path": "colleges/dtc.json",
+      "tags": [
+        "DTC",
+        "Reputed Private Institute",
+        "Computer Science & Engineering",
+        "CSE - Artificial Intelligence & Machine Learning",
+        "Artificial Intelligence & Machine Learning",
+        "CSE - Data Science"
+      ]
+    },
+    {
+      "id": "college-fimt",
+      "title": "Fairfield Institute of Management & Technology",
+      "entityType": "College Profile",
+      "category": "Colleges",
+      "path": "colleges/fimt.json",
+      "tags": [
+        "FIMT",
+        "Reputed Private Institute",
+        "Computer Science & Engineering",
+        "Artificial Intelligence & Machine Learning",
+        "Information Technology",
+        "Electronics & Communication Engineering"
+      ]
+    },
+    {
+      "id": "college-mbs",
+      "title": "MBS College of Engineering & Technology",
+      "entityType": "College Profile",
+      "category": "Colleges",
+      "path": "colleges/mbs.json",
+      "tags": [
+        "MBS College",
+        "Reputed Private Institute",
+        "Computer Science & Engineering",
+        "B.Tech (AI & ML)",
+        "Electronics & Communication Engineering",
+        "Civil Engineering"
+      ]
+    },
+    {
+      "id": "college-echelon",
+      "title": "Echelon Institute of Technology",
+      "entityType": "College Profile",
+      "category": "Colleges",
+      "path": "colleges/echelon.json",
+      "tags": [
+        "Echelon",
+        "Reputed Private Institute",
+        "Computer Science & Engineering",
+        "CSE - Artificial Intelligence & Machine Learning",
+        "Artificial Intelligence & Data Science",
+        "CSE (Cyber Security)",
+        "CSE - Data Science",
+        "B.Tech CSE (IOT) & Blockchain Technology",
+        "Robotics & Artificial Intelligence",
+        "Electronics & Communication Engineering",
+        "Civil Engineering",
+        "Mechanical Engineering"
+      ]
+    },
+    {
+      "id": "college-gnit",
+      "title": "Greater Noida Institute of Technology",
+      "entityType": "College Profile",
+      "category": "Colleges",
+      "path": "colleges/gnit.json",
+      "tags": [
+        "GNIT",
+        "Reputed Private Institute",
+        "Computer Science & Engineering",
+        "Artificial Intelligence & Machine Learning"
+      ]
+    },
+    {
+      "id": "college-dird",
+      "title": "Delhi Institute of Sciences & Technology (DIRD)",
+      "entityType": "College Profile",
+      "category": "Colleges",
+      "path": "colleges/dird.json",
+      "tags": [
+        "DIRD",
+        "Reputed Private Institute",
+        "Computer Science & Engineering"
+      ]
+    },
+    {
+      "id": "college-sbit",
+      "title": "Shri Balwant Institute of Technology",
+      "entityType": "College Profile",
+      "category": "Colleges",
+      "path": "colleges/sbit.json",
+      "tags": [
+        "SBIT",
+        "Reputed Private Institute",
+        "Computer Science & Engineering",
+        "CSE - Artificial Intelligence & Machine Learning",
+        "B.Tech CSE (AI & DS)",
+        "Electronics & Communication Engineering",
+        "Mechanical Engineering"
+      ]
+    },
+    {
+      "id": "college-usct",
+      "title": "University School of Chemical Technology",
+      "entityType": "College Profile",
+      "category": "Colleges",
+      "path": "colleges/usct.json",
+      "tags": [
+        "USCT",
+        "Govt / University Campus",
+        "Chemical Engineering (Dual Degree)",
+        "Energy Engineering"
+      ]
+    },
+    {
+      "id": "college-usbas",
+      "title": "University School of Basic and Applied Sciences",
+      "entityType": "College Profile",
+      "category": "Colleges",
+      "path": "colleges/usbas.json",
+      "tags": [
+        "USBAS",
+        "Govt / University Campus",
+        "Industrial Chemistry"
+      ]
+    }
+  ],
+  "auditReports": [
+    "missing-and-outdated-audit.json",
+    "missing-and-outdated-audit.md"
+  ]
+}

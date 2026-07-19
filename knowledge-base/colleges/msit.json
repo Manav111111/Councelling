@@ -1,0 +1,82 @@
+{
+  "metadata": {
+    "entityType": "CollegeProfile",
+    "slug": "msit",
+    "sourceFile": "lib/college-data.ts",
+    "sourceUrl": "https://ipuhub.com/colleges/msit",
+    "lastUpdated": "2026-07-08T20:10:01.177Z"
+  },
+  "profile": {
+    "code": "MSIT",
+    "slug": "msit",
+    "fullName": "Maharaja Surajmal Institute of Technology",
+    "shortName": "MSIT",
+    "university": "GGSIPU",
+    "type": "private",
+    "location": "C-4, Janakpuri, New Delhi - 110058",
+    "established": 2001,
+    "accreditation": [
+      "NAAC-A",
+      "AICTE",
+      "NBA",
+      "ISO 9001:2015"
+    ],
+    "nirfRank": "101-150 Colleges (2025)",
+    "fees": {
+      "annualTuition": 171600,
+      "total4yr": 701000,
+      "currency": "INR"
+    },
+    "branches": [
+      "CSE",
+      "IT",
+      "ECE",
+      "EEE"
+    ],
+    "admission": {
+      "exam": [
+        "JEE Main",
+        "IPU CET"
+      ],
+      "minPcmPercent": 55,
+      "quota": "10% management quota",
+      "shifts": [
+        "Shift I (Morning)",
+        "Shift II (Evening) for CSE & ECE"
+      ]
+    },
+    "placements": {
+      "year": 2025,
+      "placementPercent": 73,
+      "avgPackageLpa": 7,
+      "highestPackageLpa": 50,
+      "totalStudentsPlaced": 439,
+      "topRecruiters": [
+        "Google",
+        "Microsoft",
+        "Amazon",
+        "Adobe",
+        "Samsung",
+        "Huawei",
+        "ION Trading",
+        "Josh Tech Group",
+        "ZS Associates",
+        "Infosys"
+      ]
+    },
+    "campus": {
+      "sizeAcres": 8,
+      "hostel": false,
+      "metroAccess": true,
+      "nearestMetro": "Janakpuri West"
+    },
+    "overview": "A top-ranked private engineering college in West Delhi known for its NAAC-A accreditation and strong industry connect. MSIT offers morning and evening shifts for CSE and ECE, giving more students access to quality education.",
+    "image": "/msit.jpg",
+    "gallery": [
+      "https://res.cloudinary.com/demo/image/upload/w_600,h_420,c_fill,q_auto/f_auto/cld-sample-2.jpg",
+      "https://res.cloudinary.com/demo/image/upload/w_600,h_420,c_fill,q_auto/f_auto/cld-sample-4.jpg",
+      "https://res.cloudinary.com/demo/image/upload/w_600,h_420,c_fill,q_auto/f_auto/cld-sample-5.jpg"
+    ],
+    "mapEmbed": "https://www.google.com/maps?q=MSIT+Janakpuri+Delhi&output=embed"
+  }
+}

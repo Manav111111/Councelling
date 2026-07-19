@@ -1,0 +1,65 @@
+{
+  "metadata": {
+    "entityType": "CollegeProfile",
+    "slug": "fimt",
+    "sourceFile": "lib/round1-cutoff-data.ts",
+    "sourceUrl": "https://ipuhub.com/colleges/fimt",
+    "lastUpdated": "2026-07-08T20:10:01.177Z"
+  },
+  "profile": {
+    "id": "fimt",
+    "code": "FIMT",
+    "slug": "fimt",
+    "fullName": "Fairfield Institute of Management & Technology",
+    "shortName": "FIMT",
+    "location": "Kapashera, New Delhi",
+    "type": "private",
+    "subtype": "Reputed Private Institute",
+    "established": 2000,
+    "accreditation": [
+      "AICTE",
+      "GGSIPU Affiliated"
+    ],
+    "overview": "Fairfield Institute of Management & Technology (FIMT) is a reputed private institute affiliated with Guru Gobind Singh Indraprastha University (GGSIPU), offering B.Tech programs across 4 specialized branches.",
+    "branches": [
+      "Computer Science & Engineering",
+      "Artificial Intelligence & Machine Learning",
+      "Information Technology",
+      "Electronics & Communication Engineering"
+    ],
+    "fees": {
+      "annualTuition": 140000,
+      "total4yr": 560000
+    },
+    "placements": {
+      "year": 2025,
+      "avgPackageLpa": 5.8,
+      "highestPackageLpa": 25,
+      "placementPercent": 80,
+      "topRecruiters": [
+        "TCS",
+        "Infosys",
+        "Wipro",
+        "Cognizant"
+      ],
+      "note": "Standard GGSIPU placement pool"
+    },
+    "admission": {
+      "exam": [
+        "JEE Mains CRL (GGSIPU CET Counselling)"
+      ],
+      "quota": "85% Delhi / 15% Outside Delhi",
+      "delhiReservationPercent": 85,
+      "minPcmPercent": 55,
+      "shifts": [
+        "Shift I"
+      ]
+    },
+    "campus": {
+      "hostel": false,
+      "hostelNote": "Check institution notice board for hostel details",
+      "metroAccess": true,
+      "nearestMetro": "Connected via Delhi Metro / NCR transit"
+    }
+  }
+}

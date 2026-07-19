@@ -1,0 +1,82 @@
+{
+  "metadata": {
+    "entityType": "CollegeProfile",
+    "slug": "mait",
+    "sourceFile": "lib/college-data.ts",
+    "sourceUrl": "https://ipuhub.com/colleges/mait",
+    "lastUpdated": "2026-07-08T20:10:01.177Z"
+  },
+  "profile": {
+    "code": "MAIT",
+    "slug": "mait",
+    "fullName": "Maharaja Agrasen Institute of Technology",
+    "shortName": "MAIT",
+    "university": "GGSIPU",
+    "type": "private",
+    "location": "PSP Area, Plot No. 1, Sector 22, Rohini, New Delhi - 110086",
+    "established": 1999,
+    "accreditation": [
+      "NAAC",
+      "AICTE",
+      "NBA"
+    ],
+    "nirfRank": "201-300 Engineering (2024)",
+    "fees": {
+      "annualTuition": 186000,
+      "total4yr": 744000,
+      "currency": "INR"
+    },
+    "branches": [
+      "CSE",
+      "IT",
+      "ECE",
+      "EEE",
+      "ME",
+      "AI",
+      "Data Science",
+      "AI-ML"
+    ],
+    "admission": {
+      "exam": [
+        "JEE Main",
+        "IPU CET"
+      ],
+      "minPcmPercent": 55,
+      "quota": "10% management quota",
+      "delhiReservationPercent": 85
+    },
+    "placements": {
+      "year": 2024,
+      "placementPercent": 78,
+      "avgPackageLpa": 8,
+      "highestPackageLpa": 64,
+      "medianPackageLpa": 6,
+      "totalOffers": 1075,
+      "topRecruiters": [
+        "Amazon",
+        "Microsoft",
+        "Google",
+        "ZS Associates",
+        "Deloitte",
+        "TCS",
+        "HCL",
+        "Flipkart",
+        "D.E. Shaw",
+        "Infosys"
+      ]
+    },
+    "campus": {
+      "sizeAcres": 41,
+      "hostel": true,
+      "metroAccess": true
+    },
+    "overview": "One of the most popular and well-respected private engineering colleges under GGSIPU. MAIT in Rohini offers a wide range of branches, strong placement record with 1075+ offers, and a large vibrant campus of 41 acres.",
+    "image": "/mait.jpg",
+    "gallery": [
+      "https://res.cloudinary.com/demo/image/upload/w_600,h_420,c_fill,q_auto/f_auto/sample.jpg",
+      "https://res.cloudinary.com/demo/image/upload/w_600,h_420,c_fill,q_auto/f_auto/cld-sample-2.jpg",
+      "https://res.cloudinary.com/demo/image/upload/w_600,h_420,c_fill,q_auto/f_auto/cld-sample-3.jpg"
+    ],
+    "mapEmbed": "https://www.google.com/maps?q=MAIT+Rohini+Delhi&output=embed"
+  }
+}

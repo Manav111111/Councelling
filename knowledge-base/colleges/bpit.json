@@ -1,0 +1,76 @@
+{
+  "metadata": {
+    "entityType": "CollegeProfile",
+    "slug": "bpit",
+    "sourceFile": "lib/college-data.ts",
+    "sourceUrl": "https://ipuhub.com/colleges/bpit",
+    "lastUpdated": "2026-07-08T20:10:01.177Z"
+  },
+  "profile": {
+    "code": "BPIT",
+    "slug": "bpit",
+    "fullName": "Bhagwan Parshuram Institute of Technology",
+    "shortName": "BPIT",
+    "university": "GGSIPU",
+    "type": "private",
+    "location": "PSP Area, Sector 17, Rohini, New Delhi",
+    "established": 1996,
+    "accreditation": [
+      "AICTE",
+      "NBA",
+      "NAAC"
+    ],
+    "nirfRank": null,
+    "fees": {
+      "annualTuition": 170000,
+      "total4yr": 780000,
+      "currency": "INR"
+    },
+    "branches": [
+      "CSE",
+      "IT",
+      "ECE",
+      "EEE",
+      "ME"
+    ],
+    "admission": {
+      "exam": [
+        "JEE Main",
+        "IPU CET"
+      ],
+      "minPcmPercent": 55,
+      "quota": "10% management quota"
+    },
+    "placements": {
+      "year": 2024,
+      "placementPercent": 63,
+      "avgPackageLpa": 5.5,
+      "highestPackageLpa": 50,
+      "medianPackageLpa": 4.5,
+      "topRecruiters": [
+        "Amazon",
+        "Zomato",
+        "Newgen",
+        "Cognizant",
+        "Accenture",
+        "TCS",
+        "Wipro",
+        "Infosys",
+        "Hitachi"
+      ]
+    },
+    "campus": {
+      "sizeAcres": null,
+      "hostel": false,
+      "metroAccess": true
+    },
+    "overview": "One of the oldest private engineering colleges under GGSIPU, established in 1996. BPIT in Rohini offers solid placement outcomes with a highest package of 50 LPA and 80% placement rate across CSE, IT, ECE, and other branches.",
+    "image": "/bpit.jpg",
+    "gallery": [
+      "https://res.cloudinary.com/demo/image/upload/w_600,h_420,c_fill,q_auto/f_auto/cld-sample-3.jpg",
+      "https://res.cloudinary.com/demo/image/upload/w_600,h_420,c_fill,q_auto/f_auto/cld-sample-5.jpg",
+      "https://res.cloudinary.com/demo/image/upload/w_600,h_420,c_fill,q_auto/f_auto/sample.jpg"
+    ],
+    "mapEmbed": "https://www.google.com/maps?q=BPIT+Rohini+Delhi&output=embed"
+  }
+}

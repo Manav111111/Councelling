@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "entityType": "CollegeProfile",
+    "slug": "hmr",
+    "sourceFile": "lib/college-data.ts",
+    "sourceUrl": "https://ipuhub.com/colleges/hmr",
+    "lastUpdated": "2026-07-08T20:10:01.177Z"
+  },
+  "profile": {
+    "code": "HMR",
+    "slug": "hmr",
+    "fullName": "HMR Institute of Technology & Management",
+    "shortName": "HMR",
+    "university": "GGSIPU",
+    "type": "private",
+    "location": "Hamidpur, North West Delhi - 110036",
+    "established": 2002,
+    "accreditation": [
+      "AICTE",
+      "NAAC"
+    ],
+    "nirfRank": "Top 200 Engineering (2024)",
+    "fees": {
+      "annualTuition": 149000,
+      "total4yr": 560000,
+      "currency": "INR"
+    },
+    "branches": [
+      "CSE",
+      "IT",
+      "ECE",
+      "AI",
+      "Cyber Security"
+    ],
+    "admission": {
+      "exam": [
+        "JEE Main",
+        "IPU CET"
+      ],
+      "minPcmPercent": 60,
+      "quota": "10% management quota"
+    },
+    "placements": {
+      "year": 2024,
+      "placementPercent": 83,
+      "avgPackageLpa": 5.35,
+      "highestPackageLpa": 15,
+      "totalCompanies": 80,
+      "topRecruiters": [
+        "KPMG",
+        "TCS",
+        "IBM",
+        "Kodnest",
+        "Planet Spark",
+        "McKinley Rice",
+        "Jaro Education",
+        "Medtronic"
+      ]
+    },
+    "campus": {
+      "sizeAcres": 5,
+      "hostel": false,
+      "metroAccess": false,
+      "distanceFromAirportKm": 35
+    },
+    "overview": "HMR in North-West Delhi offers the lowest fees (₹1.49L/year) among major IPU colleges and a good 83% placement rate. It uniquely offers Cyber Security as a branch, making it attractive for students interested in information security.",
+    "image": "/hmr.jpg",
+    "gallery": [
+      "https://res.cloudinary.com/demo/image/upload/w_600,h_420,c_fill,q_auto/f_auto/cld-sample-5.jpg",
+      "https://res.cloudinary.com/demo/image/upload/w_600,h_420,c_fill,q_auto/f_auto/cld-sample-3.jpg",
+      "https://res.cloudinary.com/demo/image/upload/w_600,h_420,c_fill,q_auto/f_auto/cld-sample-4.jpg"
+    ],
+    "mapEmbed": "https://www.google.com/maps?q=HMR+Institute+Hamidpur+Delhi&output=embed"
+  }
+}

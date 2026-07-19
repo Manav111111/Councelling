@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "title": "IPU Hub Knowledge Base Audit: Missing Fields, Outdated Records & Scaling Recommendations",
+    "auditDate": "2026-07-08T20:10:01.177Z",
+    "status": "ACTION_REQUIRED_FOR_CONTINUOUS_SCALING"
+  },
+  "missingInformation": [
+    {
+      "category": "Cutoffs",
+      "item": "Spot Round / Stray Vacancy Cutoffs for 2024 & 2025",
+      "impact": "High",
+      "details": "While regular Round 1, 2, and 3 closing ranks are well documented across general and reserved quotas, exact official closing ranks for university Spot Rounds (offline/online) are currently not tracked in the static TypeScript files. Adding these will assist students with ranks > 2 Lakhs."
+    },
+    {
+      "category": "Fee Structures",
+      "item": "Granular Semester-wise & Miscellaneous Fee Breakdown",
+      "impact": "Medium",
+      "details": "Current college profiles store total annual tuition ('annualTuition') and 4-year total fees ('total4yr'). However, university examination fees (~₹15,000/year), alumni fees, security deposits (refundable), and exact hostel room rent/mess charges per semester are not separated in the data schema."
+    },
+    {
+      "category": "Seat Matrix",
+      "item": "Complete 21-College Branch-wise Seat Intake Matrix",
+      "impact": "High",
+      "details": "The current sample seat matrix covers 5 sample rows across MAIT, MSIT, USICT, BPIT, and VIPS. A complete seat matrix mapping the exact intake capacity (e.g., 180 vs 240 seats for CSE across Shift I and Shift II) for all 21 affiliated institutions is needed for high-precision probability calculation."
+    },
+    {
+      "category": "Hostels & Accommodations",
+      "item": "Detailed Private PG and Commute Timings Mapping",
+      "impact": "Medium",
+      "details": "Many private IPU colleges (e.g., MAIT, MSIT, BPIT) have limited or no on-campus boys/girls hostel seats. Expanding the schema to include verified off-campus PG clusters (e.g., Sector 15/16 Rohini for MAIT/BPIT, Janakpuri C-Block for MSIT) will enhance chatbot utility."
+    }
+  ],
+  "outdatedRecords": [
+    {
+      "item": "Important Dates & Timeline Year Alignment",
+      "details": "Some sample dates and blog post timestamps reference 2024 or mid-2026 placeholder dates. All dates should be synchronized annually immediately upon release of the official GGSIPU Admission Brochure for the upcoming academic session."
+    },
+    {
+      "item": "Placement Year Tags",
+      "details": "Most college profiles currently record 2024-25 placement metrics. As the 2025-26 placement season concludes, packages (`avgPackageLpa`, `highestPackageLpa`) must be updated to reflect recent economic conditions."
+    }
+  ],
+  "scalingAndIngestionRecommendations": [
+    {
+      "strategy": "Automated PDF Scraper Pipeline for GGSIPU Cutoff Notices",
+      "description": "GGSIPU releases official round-wise cutoffs as scanned or tabular PDF files on `ipu.ac.in`. Build a Python/Node ingestion script using `pdfplumber` or `langchain` PDF loaders to automatically extract, parse, and append new round closing ranks into `cutoffs/btech-round1-closing-ranks-2025.json` following `schemas/cutoff-schema.json`."
+    },
+    {
+      "strategy": "Vector Database Embedding & Chunking Architecture",
+      "description": "For seamless integration with Pinecone, Qdrant, or pgvector: embed all `.md` files inside `guidance-and-rules/`, `faqs/`, `fees/`, and `placements/` using OpenAI `text-embedding-3-small` or BGE-large. For numerical cutoff queries, use structured tool-calling (SQL/JSON filtering) instead of semantic vector search to guarantee 100% numerical precision."
+    },
+    {
+      "strategy": "Webhook & Cron-based Manifest Refresh",
+      "description": "Every time a new college JSON or cutoff dataset is updated, run a CI/CD build step that regenerates `metadata-index.json` so the RAG agent's retriever always knows the exact available files and schema definitions."
+    }
+  ]
+}

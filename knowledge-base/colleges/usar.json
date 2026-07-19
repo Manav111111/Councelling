@@ -1,0 +1,78 @@
+{
+  "metadata": {
+    "entityType": "CollegeProfile",
+    "slug": "usar",
+    "sourceFile": "lib/college-data.ts",
+    "sourceUrl": "https://ipuhub.com/colleges/usar",
+    "lastUpdated": "2026-07-08T20:10:01.177Z"
+  },
+  "profile": {
+    "code": "USAR",
+    "slug": "usar",
+    "fullName": "University School of Automation & Robotics",
+    "shortName": "USAR",
+    "alsoKnownAs": [
+      "USAR Delhi",
+      "University School of Automation and Robotics"
+    ],
+    "university": "GGSIPU",
+    "type": "government",
+    "location": "East Campus, Surajmal Vihar, New Delhi - 110092",
+    "established": 2019,
+    "accreditation": [
+      "AICTE",
+      "UGC",
+      "GGSIPU"
+    ],
+    "nirfRank": null,
+    "fees": {
+      "annualTuition": 220000,
+      "total4yr": 850000,
+      "currency": "INR"
+    },
+    "branches": [
+      "Robotics & Automation",
+      "Artificial Intelligence",
+      "Data Science",
+      "Internet of Things (IoT)"
+    ],
+    "admission": {
+      "exam": [
+        "JEE Main",
+        "IPU CET"
+      ],
+      "minPcmPercent": 55,
+      "quota": "No management quota (government school)",
+      "delhiReservationPercent": 85
+    },
+    "placements": {
+      "year": 2024,
+      "placementPercent": 48,
+      "avgPackageLpa": 5.8,
+      "highestPackageLpa": 12,
+      "topRecruiters": [
+        "TCS",
+        "Infosys",
+        "Wipro",
+        "HCL",
+        "Robotics & AI startups"
+      ],
+      "note": "Relatively new school (est. 2019), placement data still maturing."
+    },
+    "campus": {
+      "sizeAcres": null,
+      "hostel": true,
+      "metroAccess": true,
+      "nearestMetro": "Surajmal Vihar (Pink Line)"
+    },
+    "overview": "A niche government school under GGSIPU exclusively focused on Robotics, Automation, AI, Data Science, and IoT — aligned with Industry 4.0 demands. Being newly established (2019), it is still building its placement track record but offers unique specializations not found at other IPU colleges.",
+    "specializationNote": "Only GGSIPU school exclusively focused on Robotics, Automation, AI and emerging tech.",
+    "image": "/usar.jpg",
+    "gallery": [
+      "https://res.cloudinary.com/demo/image/upload/w_600,h_420,c_fill,q_auto/f_auto/cld-sample-4.jpg",
+      "https://res.cloudinary.com/demo/image/upload/w_600,h_420,c_fill,q_auto/f_auto/cld-sample-3.jpg",
+      "https://res.cloudinary.com/demo/image/upload/w_600,h_420,c_fill,q_auto/f_auto/sample.jpg"
+    ],
+    "mapEmbed": "https://www.google.com/maps?q=USAR+GGSIPU+Surajmal+Vihar+Delhi&output=embed"
+  }
+}

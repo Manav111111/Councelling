@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "entityType": "CollegeProfile",
+    "slug": "gtb4cec",
+    "sourceFile": "lib/round1-cutoff-data.ts",
+    "sourceUrl": "https://ipuhub.com/colleges/gtb4cec",
+    "lastUpdated": "2026-07-08T20:10:01.177Z"
+  },
+  "profile": {
+    "id": "gtb4cec",
+    "code": "GTB4CEC",
+    "slug": "gtb4cec",
+    "fullName": "Guru Tegh Bahadur 4th Centenary Engineering College",
+    "shortName": "GTB4CEC",
+    "location": "Rajouri Garden, New Delhi",
+    "type": "private",
+    "subtype": "Reputed Private Institute",
+    "established": 2000,
+    "accreditation": [
+      "AICTE",
+      "GGSIPU Affiliated"
+    ],
+    "overview": "Guru Tegh Bahadur 4th Centenary Engineering College (GTB4CEC) is a reputed private institute affiliated with Guru Gobind Singh Indraprastha University (GGSIPU), offering B.Tech programs across 5 specialized branches.",
+    "branches": [
+      "Computer Science & Engineering",
+      "CSE - Artificial Intelligence & Machine Learning",
+      "CSE (Data Science)",
+      "Information Technology",
+      "Electronics & Communication Engineering"
+    ],
+    "fees": {
+      "annualTuition": 140000,
+      "total4yr": 560000
+    },
+    "placements": {
+      "year": 2025,
+      "avgPackageLpa": 5.8,
+      "highestPackageLpa": 25,
+      "placementPercent": 80,
+      "topRecruiters": [
+        "TCS",
+        "Infosys",
+        "Wipro",
+        "Cognizant"
+      ],
+      "note": "Standard GGSIPU placement pool"
+    },
+    "admission": {
+      "exam": [
+        "JEE Mains CRL (GGSIPU CET Counselling)"
+      ],
+      "quota": "85% Delhi / 15% Outside Delhi",
+      "delhiReservationPercent": 85,
+      "minPcmPercent": 55,
+      "shifts": [
+        "Shift I"
+      ]
+    },
+    "campus": {
+      "hostel": false,
+      "hostelNote": "Check institution notice board for hostel details",
+      "metroAccess": true,
+      "nearestMetro": "Connected via Delhi Metro / NCR transit"
+    }
+  }
+}

@@ -19,24 +19,27 @@ import {
   Users,
   Award
 } from "lucide-react";
-import { ROUND1_COLLEGES_DATA, Round1College } from "@/lib/round1-cutoff-data";
+import { ROUND1_COLLEGES_DATA, Round1College as College } from "@/lib/round1-cutoff-data";
+import { ROUND2_COLLEGES_DATA } from "@/lib/round2-cutoff-data";
 
 export type QuotaCategory = "general" | "defence" | "obc" | "sc" | "st" | "ews" | "compare";
 
-export function Round1CutoffExplorer() {
+export function RoundCutoffExplorer() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedType, setSelectedType] = useState<string>("All");
-  const [selectedCollege, setSelectedCollege] = useState<Round1College | null>(null);
+  const [selectedCollege, setSelectedCollege] = useState<College | null>(null);
   const [userRank, setUserRank] = useState<string>("");
   const [regionFocus, setRegionFocus] = useState<"both" | "delhi" | "outside">("both");
   const [quotaView, setQuotaView] = useState<QuotaCategory>("general");
+  const [selectedRound, setSelectedRound] = useState<"1" | "2">("1");
 
   const rankNumber = userRank ? parseInt(userRank.replace(/\D/g, ""), 10) : null;
+  const COLLEGES_DATA = selectedRound === "1" ? ROUND1_COLLEGES_DATA : ROUND2_COLLEGES_DATA;
 
   const campusTypes = ["All", "Govt / University Campus", "Top Private Institute", "Reputed Private Institute"];
 
   const filteredColleges = useMemo(() => {
-    return ROUND1_COLLEGES_DATA.filter((college) => {
+    return COLLEGES_DATA.filter((college) => {
       const matchesSearch = 
         college.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         college.code.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -47,7 +50,7 @@ export function Round1CutoffExplorer() {
 
       return matchesSearch && matchesType;
     });
-  }, [searchQuery, selectedType]);
+  }, [searchQuery, selectedType, COLLEGES_DATA]);
 
   const getAdmissionChance = (cutoffRank: number | undefined) => {
     if (!rankNumber || isNaN(rankNumber) || !cutoffRank) return null;
@@ -83,10 +86,10 @@ export function Round1CutoffExplorer() {
             Official Round 1 Cutoffs • All Categories Supported
           </div>
           <h1 className="text-3xl font-black md:text-5xl tracking-tight leading-tight">
-            IPU Round 1 Cutoff Explorer
+            IPU Cutoff Explorer
           </h1>
           <p className="text-blue-100 text-sm md:text-base leading-relaxed">
-            We extracted the complex 26-column IPU official result PDF into an intuitive one-click tool. Check closing ranks for **General (OP)**, **Defence (DF)**, **OBC**, **SC**, **ST**, and **EWS** instantly.
+            We extracted the complex IPU official result PDF into an intuitive one-click tool. Check closing ranks for **General (OP)**, **Defence (DF)**, **OBC**, **SC**, **ST**, and **EWS** instantly.
           </p>
           <div className="flex flex-wrap items-center gap-2.5 pt-2">
             <span className="inline-flex items-center gap-1.5 rounded-lg bg-emerald-500/20 px-3 py-1.5 text-xs font-bold text-emerald-200 border border-emerald-400/30">
@@ -144,6 +147,33 @@ export function Round1CutoffExplorer() {
                   Clear Rank
                 </button>
               )}
+            </div>
+          </div>
+        </div>
+
+        {/* Round Selection */}
+        <div className="pt-3 border-t border-slate-100">
+          <div className="flex items-center flex-wrap gap-3">
+            <span className="text-xs font-extrabold text-slate-600 flex items-center gap-1.5">
+              <Sparkles size={15} className="text-ipu-blue" /> Select Counselling Round:
+            </span>
+            <div className="flex bg-slate-100 p-1 rounded-xl">
+              <button
+                onClick={() => setSelectedRound("1")}
+                className={`px-4 py-1.5 rounded-lg text-xs font-bold transition ${
+                  selectedRound === "1" ? "bg-white text-ipu-blue shadow-sm" : "text-slate-600 hover:text-slate-900"
+                }`}
+              >
+                Round 1
+              </button>
+              <button
+                onClick={() => setSelectedRound("2")}
+                className={`px-4 py-1.5 rounded-lg text-xs font-bold transition flex items-center gap-1.5 ${
+                  selectedRound === "2" ? "bg-white text-ipu-blue shadow-sm" : "text-slate-600 hover:text-slate-900"
+                }`}
+              >
+                Round 2 <span className="text-[10px] bg-amber-200 text-amber-800 px-1.5 py-0.5 rounded uppercase">New</span>
+              </button>
             </div>
           </div>
         </div>
@@ -362,7 +392,7 @@ export function Round1CutoffExplorer() {
                   <span className="rounded-lg bg-white/20 px-2.5 py-0.5 text-xs font-black uppercase tracking-wider backdrop-blur-sm">
                     {selectedCollege.code}
                   </span>
-                  <span className="text-xs text-blue-200 font-semibold">• Official Round 1 Cutoffs</span>
+                  <span className="text-xs text-blue-200 font-semibold">• Official Round {selectedRound} Cutoffs</span>
                 </div>
                 <h2 className="text-xl sm:text-2xl font-black leading-tight">
                   {selectedCollege.name}

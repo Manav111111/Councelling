@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "entityType": "CollegeProfile",
+    "slug": "sbit",
+    "sourceFile": "lib/round1-cutoff-data.ts",
+    "sourceUrl": "https://ipuhub.com/colleges/sbit",
+    "lastUpdated": "2026-07-08T20:10:01.177Z"
+  },
+  "profile": {
+    "id": "sbit",
+    "code": "SBIT",
+    "slug": "sbit",
+    "fullName": "Shri Balwant Institute of Technology",
+    "shortName": "SBIT",
+    "location": "Sonipat, NCR",
+    "type": "private",
+    "subtype": "Reputed Private Institute",
+    "established": 2000,
+    "accreditation": [
+      "AICTE",
+      "GGSIPU Affiliated"
+    ],
+    "overview": "Shri Balwant Institute of Technology (SBIT) is a reputed private institute affiliated with Guru Gobind Singh Indraprastha University (GGSIPU), offering B.Tech programs across 5 specialized branches.",
+    "branches": [
+      "Computer Science & Engineering",
+      "CSE - Artificial Intelligence & Machine Learning",
+      "B.Tech CSE (AI & DS)",
+      "Electronics & Communication Engineering",
+      "Mechanical Engineering"
+    ],
+    "fees": {
+      "annualTuition": 140000,
+      "total4yr": 560000
+    },
+    "placements": {
+      "year": 2025,
+      "avgPackageLpa": 5.8,
+      "highestPackageLpa": 25,
+      "placementPercent": 80,
+      "topRecruiters": [
+        "TCS",
+        "Infosys",
+        "Wipro",
+        "Cognizant"
+      ],
+      "note": "Standard GGSIPU placement pool"
+    },
+    "admission": {
+      "exam": [
+        "JEE Mains CRL (GGSIPU CET Counselling)"
+      ],
+      "quota": "85% Delhi / 15% Outside Delhi",
+      "delhiReservationPercent": 85,
+      "minPcmPercent": 55,
+      "shifts": [
+        "Shift I"
+      ]
+    },
+    "campus": {
+      "hostel": false,
+      "hostelNote": "Check institution notice board for hostel details",
+      "metroAccess": true,
+      "nearestMetro": "Connected via Delhi Metro / NCR transit"
+    }
+  }
+}

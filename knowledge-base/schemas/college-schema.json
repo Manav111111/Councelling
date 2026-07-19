@@ -1,0 +1,195 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CollegeProfile",
+  "description": "Structured schema for GGSIPU college profile optimized for RAG retrieval",
+  "type": "object",
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "entityType": {
+          "type": "string"
+        },
+        "slug": {
+          "type": "string"
+        },
+        "sourceFile": {
+          "type": "string"
+        },
+        "sourceUrl": {
+          "type": "string"
+        },
+        "lastUpdated": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "entityType",
+        "slug",
+        "lastUpdated"
+      ]
+    },
+    "profile": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string"
+        },
+        "slug": {
+          "type": "string"
+        },
+        "fullName": {
+          "type": "string"
+        },
+        "shortName": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "government",
+            "private"
+          ]
+        },
+        "subtype": {
+          "type": "string"
+        },
+        "established": {
+          "type": "number"
+        },
+        "nirfRank": {
+          "type": "number"
+        },
+        "accreditation": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "overview": {
+          "type": "string"
+        },
+        "specializationNote": {
+          "type": "string"
+        },
+        "branches": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "fees": {
+          "type": "object",
+          "properties": {
+            "annualTuition": {
+              "type": "number"
+            },
+            "total4yr": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "annualTuition",
+            "total4yr"
+          ]
+        },
+        "placements": {
+          "type": "object",
+          "properties": {
+            "year": {
+              "type": "number"
+            },
+            "avgPackageLpa": {
+              "type": "number"
+            },
+            "highestPackageLpa": {
+              "type": "number"
+            },
+            "placementPercent": {
+              "type": "number"
+            },
+            "topRecruiters": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "note": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "year",
+            "avgPackageLpa",
+            "highestPackageLpa",
+            "placementPercent"
+          ]
+        },
+        "admission": {
+          "type": "object",
+          "properties": {
+            "exam": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "quota": {
+              "type": "string"
+            },
+            "delhiReservationPercent": {
+              "type": "number"
+            },
+            "minPcmPercent": {
+              "type": "number"
+            },
+            "shifts": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "campus": {
+          "type": "object",
+          "properties": {
+            "sizeAcres": {
+              "type": "number"
+            },
+            "hostel": {
+              "type": "boolean"
+            },
+            "hostelNote": {
+              "type": "string"
+            },
+            "metroAccess": {
+              "type": "boolean"
+            },
+            "nearestMetro": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "required": [
+        "code",
+        "slug",
+        "fullName",
+        "shortName",
+        "location",
+        "type",
+        "branches",
+        "fees",
+        "placements"
+      ]
+    }
+  }
+}
