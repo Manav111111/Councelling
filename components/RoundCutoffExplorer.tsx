@@ -83,7 +83,7 @@ export function RoundCutoffExplorer() {
         <div className="relative z-10 max-w-3xl space-y-4">
           <div className="inline-flex items-center gap-2 rounded-full bg-white/15 px-3.5 py-1.5 text-xs font-bold uppercase tracking-wider backdrop-blur-md border border-white/20">
             <Sparkles size={14} className="text-amber-300" />
-            Official Round 1 Cutoffs • All Categories Supported
+            Official Round {selectedRound} Cutoffs • All Categories Supported
           </div>
           <h1 className="text-3xl font-black md:text-5xl tracking-tight leading-tight">
             IPU Cutoff Explorer
