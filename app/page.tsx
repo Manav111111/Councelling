@@ -74,7 +74,7 @@ export default function HomePage() {
               Predict likely IPU colleges, compare campus outcomes, meet seniors, and move through counselling with a plan instead of panic.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Button href="/round1-cutoffs" className="bg-gradient-to-r from-amber-500 to-orange-600 text-white hover:from-amber-600 hover:to-orange-700 shadow-md">⚡ View Round 1 Cutoffs</Button>
+              <Button href="/cutoffs" className="bg-gradient-to-r from-amber-500 to-orange-600 text-white hover:from-amber-600 hover:to-orange-700 shadow-md">⚡ Check your cutoff</Button>
               <Button href="/predict">Predict My College <ArrowRight size={18} /></Button>
               <Button href="/mentors" variant="secondary">Meet Mentors</Button>
               <a
