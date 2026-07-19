@@ -38,13 +38,13 @@ export const ROUND2_COLLEGES_DATA: Round1College[] = [
     branches: [
       {
         branch: "Computer Science & Engineering (Dual Degree)",
-        delhiGeneral: { minRank: 8941, maxRank: 35314 },
-        outsideGeneral: { minRank: 5353, maxRank: 28126 },
+        delhiGeneral: { minRank: 2616, maxRank: 56395 },
+        outsideGeneral: { minRank: 12948, maxRank: 34883 },
         delhiDefence: { minRank: 216864, maxRank: 1079120, priority: "Priority III" },
         outsideDefence: { minRank: 620266, maxRank: 620266, priority: "Priority I" },
         delhiOBC: { minRank: 36929, maxRank: 80637 },
-        delhiSC: { minRank: 52900, maxRank: 184812 },
-        outsideSC: { minRank: 41200, maxRank: 88419 },
+        delhiSC: { minRank: 125094, maxRank: 285511 },
+        outsideSC: { minRank: 112281, maxRank: 171445 },
         delhiST: { minRank: 112000, maxRank: 381916 },
         outsideST: { minRank: 95000, maxRank: 142510 },
         delhiEWS: { minRank: 28000, maxRank: 54819 },
@@ -113,12 +113,12 @@ export const ROUND2_COLLEGES_DATA: Round1College[] = [
     branches: [
       {
         branch: "Computer Science & Engineering (Shift I)",
-        delhiGeneral: { minRank: 105, maxRank: 71153 },
-        outsideGeneral: { minRank: 1963, maxRank: 44869 },
+        delhiGeneral: { minRank: 31327, maxRank: 92593 },
+        outsideGeneral: { minRank: 23483, maxRank: 56402 },
         delhiDefence: { minRank: 104152, maxRank: 1006290, priority: "Priority VI" },
         outsideDefence: { minRank: 101339, maxRank: 757836, priority: "Priority II" },
-        delhiSC: { minRank: 95000, maxRank: 312450 },
-        outsideSC: { minRank: 68000, maxRank: 124510 },
+        delhiSC: { minRank: 184225, maxRank: 449584 },
+        outsideSC: { minRank: 162458, maxRank: 222481 },
         delhiEWS: { minRank: 52000, maxRank: 89450 },
         outsideEWS: { minRank: 38000, maxRank: 52140 },
       },
@@ -211,12 +211,12 @@ export const ROUND2_COLLEGES_DATA: Round1College[] = [
     branches: [
       {
         branch: "Computer Science & Engineering (Shift I)",
-        delhiGeneral: { minRank: 27495, maxRank: 97863 },
-        outsideGeneral: { minRank: 11531, maxRank: 56389 },
+        delhiGeneral: { minRank: 57092, maxRank: 123933 },
+        outsideGeneral: { minRank: 51902, maxRank: 66405 },
         delhiDefence: { minRank: 158790, maxRank: 528952, priority: "Priority VI" },
         outsideDefence: { minRank: 800864, maxRank: 800864, priority: "Priority III" },
-        delhiSC: { minRank: 125000, maxRank: 358910 },
-        outsideSC: { minRank: 82000, maxRank: 142510 },
+        delhiSC: { minRank: 403872, maxRank: 669456 },
+        outsideSC: { minRank: 198840, maxRank: 251793 },
         delhiEWS: { minRank: 68000, maxRank: 109410 },
         outsideEWS: { minRank: 48000, maxRank: 64510 },
       },
@@ -335,12 +335,12 @@ export const ROUND2_COLLEGES_DATA: Round1College[] = [
     branches: [
       {
         branch: "Computer Science & Engineering",
-        delhiGeneral: { minRank: 74137, maxRank: 149559 },
-        outsideGeneral: { minRank: 59292, maxRank: 68754 },
+        delhiGeneral: { minRank: 131054, maxRank: 178843 },
+        outsideGeneral: { minRank: 65391, maxRank: 77442 },
         delhiDefence: { minRank: 199423, maxRank: 266683, priority: "Priority VI" },
         outsideDefence: { minRank: 111282, maxRank: 111282, priority: "Priority III" },
-        delhiSC: { minRank: 185000, maxRank: 524410 },
-        outsideSC: { minRank: 108000, maxRank: 188410 },
+        delhiSC: { minRank: 495622, maxRank: 799899 },
+        outsideSC: { minRank: 250034, maxRank: 301899 },
         delhiEWS: { minRank: 105000, maxRank: 168410 },
       },
       {
